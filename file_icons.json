@@ -1,0 +1,177 @@
+{
+  "iconDefinitions": {
+    "file_default": {
+      "iconPath": "./src/asset/icon/file.svg"
+    },
+    "folder_default": {
+      "iconPath": "./src/asset/folder/folder.svg"
+    },
+    "folderExpanded": {
+      "iconPath": "./src/asset/folder/folder.svg"
+    },
+    "file_astro": {
+      "iconPath": "./src/asset/icon/astro.svg"
+    },
+    "file_html": {
+      "iconPath": "./src/asset/icon/html.svg"
+    },
+    "file_javascript": {
+      "iconPath": "./src/asset/icon/javascript.svg"
+    },
+    "file_typescript": {
+      "iconPath": "./src/asset/icon/typescript.svg"
+    },
+    "file_css": {
+      "iconPath": "./src/asset/icon/css.svg"
+    },
+    "file_sass": {
+      "iconPath": "./src/asset/icon/sass.svg"
+    },
+    "file_postcss": {
+      "iconPath": "./src/asset/icon/postcss.svg"
+    },
+    "file_npm": {
+      "iconPath": "./src/asset/icon/npm.svg"
+    },
+    "file_pnpm": {
+      "iconPath": "./src/asset/icon/pnpm.svg"
+    },
+    "file_yarn": {
+      "iconPath": "./src/asset/icon/yarn.svg"
+    },
+    "file_bun": {
+      "iconPath": "./src/asset/icon/bun.svg"
+    },
+    "file_eslint": {
+      "iconPath": "./src/asset/icon/eslint.svg"
+    },
+    "file_stylelint": {
+      "iconPath": "./src/asset/icon/stylelint.svg"
+    },
+    "file_json": {
+      "iconPath": "./src/asset/icon/json.svg"
+    },
+    "file_node": {
+      "iconPath": "./src/asset/icon/node.svg"
+    },
+    "file_git": {
+      "iconPath": "./src/asset/icon/git.svg"
+    },
+    "file_react": {
+      "iconPath": "./src/asset/icon/react.svg"
+    },
+    "file_react_jsx": {
+      "iconPath": "./src/asset/icon/react_jsx.svg"
+    },
+    "file_solid": {
+      "iconPath": "./src/asset/icon/solid.svg"
+    },
+    "file_qwik": {
+      "iconPath": "./src/asset/icon/qwik.svg"
+    },
+    "file_svelte": {
+      "iconPath": "./src/asset/icon/svelte.svg"
+    },
+    "file_vscode": {
+      "iconPath": "./src/asset/icon/vscode.svg"
+    },
+    "file_tailwind": {
+      "iconPath": "./src/asset/icon/tailwind.svg"
+    },
+    "file_vite": {
+      "iconPath": "./src/asset/icon/vite.svg"
+    },
+    "file_vitest": {
+      "iconPath": "./src/asset/icon/vitest.svg"
+    }
+  },
+  "file": "file_default",
+  "folder": "folder_default",
+  "folderExpanded": "folder_default",
+  "fileExtensions": {
+    "astro": "file_astro",
+    "html": "file_html",
+    "js": "file_javascript",
+    "cjs": "file_javascript",
+    "mjs": "file_javascript",
+    "ts": "file_typescript",
+    "cts": "file_typescript",
+    "mts": "file_typescript",
+    "css": "file_css",
+    "scss": "file_sass",
+    "sass": "file_sass",
+    "postcss": "file_postcss",
+    "pcss": "file_postcss",
+    "npmrc": "file_npm",
+    "npmignore": "file_npm",
+    "yarnrc": "file_yarn",
+    "yarnclean": "file_yarn",
+    "eslintrc": "file_eslint",
+    "eslintignore": "file_eslint",
+    "eslintcache": "file_eslint",
+    "stylelintrc": "file_stylelint",
+    "stylelintignore": "file_stylelint",
+    "stylelintcache": "file_stylelint",
+    "json": "file_json",
+    "jsonc": "file_json",
+    "json5": "file_json",
+    "gitignore": "file_git",
+    "gitattributes": "file_git",
+    "gitmodules": "file_git",
+    "jsx": "file_react_jsx",
+    "tsx": "file_react",
+    "svelte": "file_svelte",
+    "code-snippets": "file_vscode",
+    "vsix": "file_vscode",
+    "tailwind.css": "file_tailwind",
+    "tailwind.config.css": "file_tailwind",
+    "test.ts": "file_vitest",
+    "test.js": "file_vitest",
+    "test.tsx": "file_vitest",
+    "test.jsx": "file_vitest",
+    "spec.ts": "file_vitest",
+    "spec.js": "file_vitest"
+  },
+  "fileNames": {
+    "pnpm-workspace.yaml": "file_pnpm",
+    "pnpmfile.js": "file_pnpm",
+    "pnpm-lock.yaml": "file_pnpm",
+    "yarn.lock": "file_yarn",
+    "bun.lock": "file_bun",
+    "bun.lockb": "file_bun",
+    "eslint.config.js": "file_eslint",
+    "eslint.config.cjs": "file_eslint",
+    "eslint.config.mjs": "file_eslint",
+    ".eslintrc.json": "file_eslint",
+    ".eslintrc.js": "file_eslint",
+    "stylelint.config.js": "file_stylelint",
+    "stylelint.config.cjs": "file_stylelint",
+    ".stylelintrc.json": "file_stylelint",
+    ".stylelintrc.js": "file_stylelint",
+    "package.json": "file_node",
+    "solid.config.ts": "file_solid",
+    "solid.config.js": "file_solid",
+    "qwik.config.ts": "file_qwik",
+    "qwik.config.js": "file_qwik",
+    "root.tsx": "file_qwik",
+    "entry.ssr.tsx": "file_qwik",
+    "svelte.config.js": "file_svelte",
+    "svelte.config.ts": "file_svelte",
+    "extensions.json": "file_vscode",
+    "launch.json": "file_vscode",
+    "settings.json": "file_vscode",
+    "tasks.json": "file_vscode",
+    "tailwind.config.js": "file_tailwind",
+    "tailwind.config.ts": "file_tailwind",
+    "tailwind.config.cjs": "file_tailwind",
+    "tailwind.config.mjs": "file_tailwind",
+    "vite.config.ts": "file_vite",
+    "vite.config.js": "file_vite",
+    "vite.config.mts": "file_vite",
+    "vite.config.cts": "file_vite",
+    "vitest.config.ts": "file_vitest",
+    "vitest.config.js": "file_vitest",
+    "vitest.config.mts": "file_vitest",
+    "vitest.config.cts": "file_vitest"
+  }
+}
