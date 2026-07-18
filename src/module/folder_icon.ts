@@ -1,0 +1,3 @@
+const folderIcon = [{}];
+
+export { folderIcon };
