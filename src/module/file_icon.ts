@@ -1,4 +1,6 @@
-const fileIcon = [
+import type { FileIconType } from '../type/file_icon_types';
+
+const fileIcon: FileIconType[] = [
   {
     fileExtension: ['astro'],
     name: 'astro'
@@ -11,8 +13,12 @@ const fileIcon = [
     fileExtension: [
       'js',
       'cjs',
-      'mjs'
+      'mjs',
+      'es6',
+      'pac',
+      'esx'
     ],
+    fileName: ['jakefile.js'],
     name: 'javascript'
   },
   {
@@ -28,60 +34,80 @@ const fileIcon = [
     name: 'css'
   },
   {
+    fileExtension: ['css.map'],
+    name: 'css_map'
+  },
+  {
     fileExtension: ['scss', 'sass'],
     name: 'sass'
   },
   {
+    fileName: [
+      'postcss.config.js',
+      'postcss.config.cjs',
+      'postcss.config.mjs',
+      'postcss.config.ts',
+      '.postcssrc',
+      '.postcssrc.js',
+      '.postcssrc.json',
+      '.postcssrc.yml'
+    ],
     fileExtension: ['postcss', 'pcss'],
     name: 'postcss'
   },
   {
-    fileExtension: ['npmrc', 'npmignore'],
+    fileName: ['.npmignore', '.npmrc'],
     name: 'npm'
   },
   {
     fileName: [
       'pnpm-workspace.yaml',
-      'pnpmfile.js',
+      '.pnpmfile.cjs',
       'pnpm-lock.yaml'
     ],
     name: 'pnpm'
   },
   {
-    fileExtension: ['yarnrc', 'yarnclean'],
-    fileName: ['yarn.lock'],
+    fileName: [
+      '.yarnrc',
+      'yarn.lock',
+      '.yarnclean',
+      '.yarn-integrity',
+      'yarn-error.log',
+      '.yarnrc.yml',
+      '.yarnrc.yaml'
+    ],
     name: 'yarn'
   },
   {
-    fileName: ['bun.lock', 'bun.lockb'],
+    fileName: [
+      'bun.lockb',
+      'bunfig.toml',
+      '.bun-version',
+      'bun.lock'
+    ],
     name: 'bun'
   },
   {
-    fileExtension: [
-      'eslintrc',
-      'eslintignore',
-      'eslintcache'
-    ],
     fileName: [
       'eslint.config.js',
       'eslint.config.cjs',
       'eslint.config.mjs',
       '.eslintrc.json',
-      '.eslintrc.js'
+      '.eslintrc.js',
+      '.eslintignore',
+      '.eslintcache'
     ],
     name: 'eslint'
   },
   {
-    fileExtension: [
-      'stylelintrc',
-      'stylelintignore',
-      'stylelintcache'
-    ],
     fileName: [
       'stylelint.config.js',
       'stylelint.config.cjs',
       '.stylelintrc.json',
-      '.stylelintrc.js'
+      '.stylelintrc.js',
+      '.stylelintignore',
+      '.stylelintcache'
     ],
     name: 'stylelint'
   },
@@ -89,7 +115,24 @@ const fileIcon = [
     fileExtension: [
       'json',
       'jsonc',
-      'json5'
+      'tsbuildinfo',
+      'json5',
+      'jsonl',
+      'ndjson',
+      'geojson',
+      'har',
+      'jsonld',
+      'webmanifest',
+      'ts.map'
+    ],
+    fileName: [
+      '.jscsrc',
+      '.jshintrc',
+      'composer.lock',
+      '.jsbeautifyrc',
+      '.esformatter',
+      'cdp.pid',
+      '.whitesource'
     ],
     name: 'json'
   },
@@ -142,14 +185,41 @@ const fileIcon = [
     name: 'vscode'
   },
   {
-    fileExtension: ['tailwind.css', 'tailwind.config.css'],
     fileName: [
+      'tailwind.js',
+      'tailwind.ts',
       'tailwind.config.js',
-      'tailwind.config.ts',
       'tailwind.config.cjs',
-      'tailwind.config.mjs'
+      'tailwind.config.mjs',
+      'tailwind.config.ts',
+      'tailwind.config.cts',
+      'tailwind.config.mts'
     ],
     name: 'tailwind'
+  },
+  {
+    name: 'unocss',
+    fileName: [
+      'uno.config.js',
+      'uno.config.mjs',
+      'uno.config.ts',
+      'uno.config.mts',
+      'unocss.config.js',
+      'unocss.config.mjs',
+      'unocss.config.ts',
+      'unocss.config.mts'
+    ]
+  },
+  {
+    name: 'vanilla_extract',
+    fileExtension: [
+      'css.ts',
+      'css.js',
+      'css.cjs',
+      'css.mjs',
+      'css.tsx',
+      'css.jsx'
+    ]
   },
   {
     fileName: [
@@ -161,14 +231,6 @@ const fileIcon = [
     name: 'vite'
   },
   {
-    fileExtension: [
-      'test.ts',
-      'test.js',
-      'test.tsx',
-      'test.jsx',
-      'spec.ts',
-      'spec.js'
-    ],
     fileName: [
       'vitest.config.ts',
       'vitest.config.js',
@@ -176,6 +238,22 @@ const fileIcon = [
       'vitest.config.cts'
     ],
     name: 'vitest'
+  },
+  {
+    fileExtension: ['apk', 'aab'],
+    name: 'android'
+  },
+  {
+    fileExtension: ['mjml'],
+    name: 'mjml'
+  },
+  {
+    fileExtension: ['lua'],
+    name: 'lua'
+  },
+  {
+    fileExtension: ['rs'],
+    name: 'rust'
   }
 ];
 
