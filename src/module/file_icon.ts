@@ -1,3 +1,4 @@
+/* eslint-disable max-lines */
 import type { FileIconType } from '../type/file_icon_types';
 
 const fileIcon: FileIconType[] = [
@@ -137,16 +138,54 @@ const fileIcon: FileIconType[] = [
     name: 'json'
   },
   {
-    fileName: ['package.json'],
+    fileName: [
+      'package.json',
+      'package-lock.json',
+      '.nvmrc',
+      '.esmrc',
+      '.node-version'
+    ],
     name: 'node'
   },
   {
-    fileExtension: [
-      'gitignore',
-      'gitattributes',
-      'gitmodules'
+    name: 'nodemon',
+    fileName: ['nodemon.json', 'nodemon-debug.json']
+  },
+
+  {
+    fileExtension: ['patch'],
+    fileName: [
+      '.git',
+      '.gitignore',
+      '.gitmessage',
+      '.gitignore-global',
+      '.gitignore_global',
+      '.gitattributes',
+      '.gitattributes-global',
+      '.gitattributes_global',
+      '.gitconfig',
+      '.gitmodules',
+      '.gitkeep',
+      '.keep',
+      '.gitpreserve',
+      '.gitinclude',
+      '.git-blame-ignore',
+      '.git-blame-ignore-revs',
+      '.git-for-windows-updater',
+      'git-history',
+      'COMMIT_EDITMSG',
+      'MERGE_MSG',
+      'git-rebase-todo'
     ],
     name: 'git'
+  },
+  {
+    name: 'gitlab',
+    fileExtension: ['gitlab-ci.yml']
+  },
+  {
+    name: 'github_funding',
+    fileName: ['.github/FUNDING.yml', '.github/FUNDING.yaml']
   },
   {
     fileExtension: ['jsx', 'tsx'],
@@ -254,6 +293,89 @@ const fileIcon: FileIconType[] = [
   {
     fileExtension: ['rs'],
     name: 'rust'
+  },
+  {
+    name: 'editorconfig',
+    fileName: [
+      '.editorconfig',
+      '.editorconfig-checker.json',
+      '.ecrc'
+    ]
+  },
+  {
+    fileName: [
+      '.huskyrc',
+      '.huskyrc.json',
+      '.huskyrc.js'
+    ],
+    name: 'husky'
+  },
+  {
+    name: 'amplify',
+    fileName: ['amplify.yml']
+  },
+  {
+    name: 'oxlint',
+    fileName: [
+      '.oxlintrc.json',
+      '.oxlintrc.jsonc',
+      '.oxfmtrc.json',
+      '.oxfmtrc.jsonc',
+      'oxlint.config.ts',
+      'oxfmt.config.ts'
+    ]
+  },
+  {
+    fileName: [
+      '.prettierrc',
+      '.prettierrc.json',
+      '.prettierrc.yml',
+      '.prettierrc.yaml',
+      '.prettierrc.js',
+      '.prettierrc.cjs',
+      '.prettierrc.mjs',
+      '.prettierrc.config.js',
+      '.prettierrc.config.cjs',
+      'prettier.config.js',
+      'prettier.config.cjs',
+      'prettier.config.mjs',
+      '.prettierignore'
+    ],
+    name: 'prettier'
+  },
+  {
+    fileName: [
+      'webpack.config.js',
+      'webpack.config.cjs',
+      'webpack.config.mjs',
+      'webpack.config.ts',
+      'webpack.dev.js',
+      'webpack.prod.js',
+      'webpack.common.js'
+    ],
+    name: 'webpack'
+  },
+  {
+    fileName: [
+      '.graphqlrc',
+      '.graphqlrc.json',
+      '.graphqlrc.yml',
+      '.graphqlrc.yaml',
+      '.graphqlrc.js',
+      '.graphqlrc.ts',
+      'graphql.config.js',
+      'graphql.config.ts'
+    ],
+    name: 'graphql'
+  },
+  {
+    fileName: [
+      'playwright.config.ts',
+      'playwright.config.js',
+      'playwright.config.mjs',
+      'playwright.config.cjs'
+    ],
+    name: 'playwright'
   }
 ];
 
