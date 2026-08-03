@@ -1,19 +1,19 @@
-/* eslint-disable import/no-namespace */
 /* eslint-disable ts/no-empty-function */
-// import { changeTheme } from './util/generate_icon';
+import { workspace } from 'vscode';
 
-import type * as vscode from 'vscode';
+import { changeIconTheme } from './util/generate_icon';
 
-export const activate = (context: vscode.ExtensionContext) => {
-  console.log('✅ Extensión activada correctamente desde:', context.extensionPath);
-  // context.subscriptions.push(vscode.workspace.onDidChangeConfiguration((event) => {
-  //  if (event.affectsConfiguration('aesthetic-icons.theme')) {
-  //    const config = vscode.workspace.getConfiguration('aesthetic-icons');
-  //    const selectedTheme = config.get('theme', 'dark');
-  //    changeTheme(context.extensionPath, selectedTheme);
-  //    vscode.window.showInformationMessage(`Aesthetic Icons: Theme changed to ${selectedTheme}`);
-  //  }
-  // }));
+import type { ExtensionContext } from 'vscode';
+
+export const activate = (context: ExtensionContext) => {
+  context.subscriptions.push(workspace.onDidChangeConfiguration((event) => {
+    if (event.affectsConfiguration('aesthetic-icons.theme')) {
+      const config = workspace.getConfiguration('aesthetic-icons');
+      const selectedTheme = config.get('theme', 'dark');
+
+      changeIconTheme(context.extensionPath, selectedTheme);
+    }
+  }));
 };
 
 export const deactivate = () => {};
