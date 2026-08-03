@@ -1,62 +1,40 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+import { iconTheme } from '../const/icon_theme';
 import { fileIcon } from '../module/file_icon';
+import { changeSvgColor } from './change_svg_color';
 
-const OUTPUT_FILE = path.join(process.cwd(), 'file_icons.json');
+import type { ThemeType } from '../type/theme_type';
 
-type IconDefinition = {
-  iconPath?: string;
-  file_default?: string;
-  folder_default?: string;
-};
+const OUTPUT_FILE = path.join(process.cwd(), 'dist/file_icons.json');
 
 const generateIcon = () => {
-  const theme: {
-    file: string;
-    folder: string;
-    folderExpanded: string;
-    fileNames: Record<string, string>;
-    fileExtensions: Record<string, string>;
-    iconDefinitions: Record<string, IconDefinition>;
-  } = {
-    iconDefinitions: {
-      file_default: {
-        iconPath: './src/asset/icon/file.svg'
-      },
-      folder_default: {
-        iconPath: './src/asset/folder/folder.svg'
-      },
-      folderExpanded: {
-        iconPath: './src/asset/folder/folder.svg'
-      }
-    },
-    file: 'file_default',
-    folder: 'folder_default',
-    folderExpanded: 'folder_default',
-    fileExtensions: {},
-    fileNames: {}
-  };
-
   fileIcon.forEach((icon) => {
     const definitionId = `file_${icon.name}`;
 
-    theme.iconDefinitions[definitionId] = {
-      iconPath: `./src/asset/icon/${icon.name}.svg`
+    iconTheme.iconDefinitions[definitionId] = {
+      iconPath: `./asset/icon/${icon.name}.svg`
     };
 
     icon.fileExtension?.forEach((extension) => {
-      theme.fileExtensions[extension] = definitionId;
+      iconTheme.fileExtensions[extension] = definitionId;
     });
 
     icon.fileName?.forEach((fileName) => {
-      theme.fileNames[fileName] = definitionId;
+      iconTheme.fileNames[fileName] = definitionId;
     });
   });
 
-  fs.writeFileSync(OUTPUT_FILE, JSON.stringify(theme, null, 2));
+  fs.writeFileSync(OUTPUT_FILE, JSON.stringify(iconTheme, null, 2));
+};
+
+const changeTheme = (iconPath: string, theme: ThemeType) => {
+  fileIcon.filter((icon) => { return icon.theme; }).forEach((icon) => {
+    changeSvgColor(path.join(iconPath, 'dist/asset/icon'), `${icon.name}.svg`, theme);
+  });
 };
 
 generateIcon();
 
-export { generateIcon };
+export { changeTheme, generateIcon };
