@@ -1,21 +1,43 @@
 {
   "publisher": "luis",
   "name": "aesthetic-icons",
-  "displayName": "aesthetic-icons",
-  "description": "",
+  "displayName": "Aesthetic icons",
+  "description": "Aesthetic icon theme for Visual Studio Code",
   "version": "0.0.1",
+  "keywords": [
+    "icons",
+    "theme",
+    "icon-theme",
+    "customization",
+    "aesthetic"
+  ],
+  "extensionKind": ["ui", "workspace"],
   "categories": ["Themes"],
+  "main": "./dist/extension.js",
   "engines": {
     "vscode": "^1.125.0",
     "node": ">=22.17.0",
     "bun": ">=1.1.0"
   },
+  "activationEvents": ["onStartupFinished"],
   "contributes": {
     "iconThemes": [{
       "id": "aesthetic-icons",
       "label": "Aesthetic icons",
-      "path": "./file_icons.json"
-    }]
+      "path": "./dist/file_icons.json"
+    }],
+    "configuration": {
+      "title": "Aesthetic icons",
+      "properties": {
+        "aesthetic-icons.theme": {
+          "type": "string",
+          "default": "dark",
+          "enum": ["dark", "light"],
+          "description": "Select the Aesthetic icon theme",
+          "enumDescriptions": ["Dark theme", "Light theme"]
+        }
+      }
+    }
   },
   "scripts": {
     "postinstall": "gitlys init",
@@ -29,7 +51,7 @@
     "compile-tests": "tsc -p . --outDir out",
     "watch-tests": "tsc -p . -w --outDir out",
     "pretest": "pnpm run compile-tests && pnpm run compile && pnpm run lint",
-    "copy-assets": "shx mkdir -p dist/global/asset && shx cp -r src/asset/* dist/global/asset/",
+    "copy-assets": "shx mkdir -p dist/asset && shx cp -r src/asset/* dist/asset/",
     "check-types": "tsc --noEmit",
     "lint": "eslint src",
     "test": "vscode-test"
