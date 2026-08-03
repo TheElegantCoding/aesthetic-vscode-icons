@@ -110,6 +110,7 @@ const fileIcon: FileIconType[] = [
       '.stylelintignore',
       '.stylelintcache'
     ],
+    theme: 'dark',
     name: 'stylelint'
   },
   {
@@ -181,7 +182,7 @@ const fileIcon: FileIconType[] = [
   },
   {
     name: 'gitlab',
-    fileExtension: ['gitlab-ci.yml']
+    fileName: ['gitlab-ci.yml']
   },
   {
     name: 'github_funding',
@@ -376,6 +377,107 @@ const fileIcon: FileIconType[] = [
       'playwright.config.cjs'
     ],
     name: 'playwright'
+  },
+  {
+    name: 'browserlist',
+    fileName: ['browserslist', '.browserslistrc']
+  },
+  {
+    name: 'rollup',
+    fileName: [
+      'rollup.config.js',
+      'rollup.config.mjs',
+      'rollup.config.ts',
+      'rollup-config.js',
+      'rollup-config.mjs',
+      'rollup-config.ts',
+      'rollup.config.common.js',
+      'rollup.config.common.mjs',
+      'rollup.config.common.ts',
+      'rollup.config.base.js',
+      'rollup.config.base.mjs',
+      'rollup.config.base.ts',
+      'rollup.config.prod.js',
+      'rollup.config.prod.mjs',
+      'rollup.config.prod.ts',
+      'rollup.config.dev.js',
+      'rollup.config.dev.mjs',
+      'rollup.config.dev.ts',
+      'rollup.config.prod.vendor.js',
+      'rollup.config.prod.vendor.mjs',
+      'rollup.config.prod.vendor.ts'
+    ]
+  },
+  {
+    name: 'next',
+    fileName: [
+      'next.config.js',
+      'next.config.mjs',
+      'next.config.ts',
+      'next.config.mts'
+    ]
+  },
+  {
+    name: 'photoshop',
+    fileExtension: [
+      'psd',
+      'psb',
+      'psdt'
+    ]
+  },
+  {
+    name: 'illustrator',
+    fileExtension: ['ai', 'ait']
+  },
+  {
+    name: 'pdf',
+    fileExtension: ['pdf']
+  },
+  {
+    name: 'adobe_xd',
+    fileExtension: ['xd']
+  },
+  {
+    name: 'figma',
+    fileExtension: ['fig']
+  },
+  {
+    name: 'c',
+    fileExtension: [
+      'c',
+      'i',
+      'mi'
+    ]
+  },
+  {
+    name: 'cpp',
+    fileExtension: [
+      'cc',
+      'cpp',
+      'cxx',
+      'c++',
+      'cp',
+      'mii',
+      'ii',
+      'cppm',
+      'c++m',
+      'ccm',
+      'cxxm',
+      'h.in',
+      'hpp.in',
+      'ipp',
+      'ixx',
+      'tpp',
+      'txx'
+    ]
+  },
+  {
+    name: 'c_sharp',
+    fileExtension: [
+      'cs',
+      'csx',
+      'csharp'
+    ]
   }
 ];
 
