@@ -1,9 +1,9 @@
 {
-  "publisher": "luis",
-  "name": "aesthetic-icons",
+  "publisher": "LuisMonsalve",
+  "name": "aesthetic-vscode-icons",
   "displayName": "Aesthetic icons",
-  "description": "Aesthetic icon theme for Visual Studio Code",
-  "version": "0.0.1",
+  "description": "Aesthetic icon theme for Vscode",
+  "version": "0.0.0",
   "keywords": [
     "icons",
     "theme",
@@ -40,39 +40,24 @@
     }
   },
   "scripts": {
-    "postinstall": "gitlys init",
+    "postinstall": "bunx gitlys init",
     "preinstall": "npx only-allow bun",
-    "vscode:prepublish": "pnpm run package",
-    "compile": "pnpm run check-types && pnpm run lint && node esbuild.js && pnpm run copy-assets",
-    "watch": "pnpm run copy-assets && npm-run-all -p watch:*",
-    "watch:esbuild": "node esbuild.js --watch",
-    "watch:tsc": "tsc --noEmit --watch --project tsconfig.json",
-    "package": "pnpm run check-types && pnpm run lint && node esbuild.js --production",
-    "compile-tests": "tsc -p . --outDir out",
-    "watch-tests": "tsc -p . -w --outDir out",
-    "pretest": "pnpm run compile-tests && pnpm run compile && pnpm run lint",
+    "playground": "bun ./src/module/playground.ts",
+    "build": "bunx tsup && bun run copy-assets && bun run playground",
+    "watch": "bunx tsup --watch",
+    "package": "vsce package --no-dependencies",
+    "publish": "vsce publish --no-dependencies",
     "copy-assets": "shx mkdir -p dist/asset && shx cp -r src/asset/* dist/asset/",
-    "check-types": "tsc --noEmit",
-    "lint": "eslint src",
-    "test": "vscode-test"
+    "lint": "eslint --fix"
   },
   "devDependencies": {
-    "@types/mocha": "^10.0.10",
-    "@types/node": "24.x",
+    "@types/node": "22.20.2",
     "@types/vscode": "^1.125.0",
-    "@vscode/test-cli": "^0.0.15",
-    "@vscode/test-electron": "^3.0.0",
-    "esbuild": "^0.28.1",
-    "eslint": "^10.5.0",
-    "eslint-config-universal-code": "1.0.19",
-    "gitlys": "2.2.0",
+    "eslint-config-universal-code": "1.1.2",
+    "gitlys": "2.2.1",
     "npm-run-all": "^4.1.5",
     "shx": "0.4.0",
-    "typescript": "^6.0.3",
-    "typescript-eslint": "^8.61.1"
-  },
-  "overrides": {
-    "diff": "^8.0.4",
-    "serialize-javascript": "^7.0.6"
+    "tsup": "8.5.1",
+    "typescript": "^6.0.3"
   }
 }
