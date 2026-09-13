@@ -4,7 +4,8 @@ import type { FileIconType } from '../type/file_icon_types';
 const fileIcon: FileIconType[] = [
   {
     fileExtension: ['astro'],
-    name: 'astro'
+    name: 'astro',
+    theme: 'dark'
   },
   {
     fileExtension: ['html'],
