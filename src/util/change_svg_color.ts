@@ -5,22 +5,30 @@ import { color } from '../style/color';
 
 const changeSvgColor = (iconPath: string, baseFileName: string, theme: string) => {
   const templatePath = path.join(iconPath, `${baseFileName}.svg`);
-
-  if (!fs.existsSync(templatePath)) {
-    return `${baseFileName}.svg`;
-  }
-
+  const fileName = theme === 'dark' ? `${baseFileName}.svg` : `${baseFileName}_light.svg`;
   const colorToUse = theme === 'dark' ? color.light : color.dark;
+  let svgContent = fs.readFileSync(templatePath, 'utf-8');
+  const hasDataTheme = (/data-theme\s*=/i).test(svgContent);
 
-  const svgContent = fs.readFileSync(templatePath, 'utf-8');
-  const updatedSvgContent = svgContent.replaceAll(/fill="[^"]*"/g, `fill="${colorToUse}"`);
+  svgContent = hasDataTheme
+    ? svgContent.replaceAll(/<([a-z0-9]+)([^>]*data-change[^>]*)>/gi, (_match, tagName, attributes: string) => {
+      let newAttributes = attributes;
 
-  const newFileName = `${baseFileName}~${theme}.svg`;
-  const targetPath = path.join(iconPath, newFileName);
+      if ((/fill\s*=/i).test(newAttributes)) {
+        newAttributes = newAttributes.replace(/fill\s*=\s*(["'])(.*?)\1/i, `fill="${colorToUse}"`);
+      }
 
-  fs.writeFileSync(targetPath, updatedSvgContent, 'utf-8');
+      if (!(/fill\s*=/i).test(newAttributes)) {
+        newAttributes = `${newAttributes} fill="${colorToUse}"`;
+      }
 
-  return newFileName;
+      return `<${tagName}${newAttributes}>`;
+    })
+    : svgContent.replaceAll(/fill="[^"]*"/g, `fill="${colorToUse}"`);
+
+  fs.writeFileSync(path.join(iconPath, fileName), svgContent, 'utf-8');
+
+  return fileName;
 };
 
 export { changeSvgColor };
