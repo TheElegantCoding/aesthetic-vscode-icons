@@ -14,7 +14,7 @@ const generateIcon = (extensionPath?: string, theme?: ThemeType) => {
     const definitionId = `file_${icon.name}`;
 
     const hasThemeSuffix = icon.theme && theme;
-    const iconFileName = hasThemeSuffix ? `${icon.name}~${theme}.svg` : `${icon.name}.svg`;
+    const iconFileName = hasThemeSuffix && theme === 'light' ? `${icon.name}_light.svg` : `${icon.name}.svg`;
 
     iconTheme.iconDefinitions[definitionId] = {
       iconPath: `./asset/icon/${iconFileName}`
