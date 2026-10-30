@@ -40,24 +40,24 @@
     }
   },
   "scripts": {
-    "postinstall": "bunx gitlys init",
-    "preinstall": "npx only-allow bun",
+    "setup": "bunx gitlys init",
     "playground": "bun ./src/module/playground.ts",
-    "build": "bunx tsup && bun run copy-assets && bun run playground",
-    "watch": "bunx tsup --watch",
+    "build": "bunx tsdown && bun run copy-assets && bun run playground",
+    "watch": "bunx tsdown --watch",
     "package": "vsce package --no-dependencies",
     "publish": "vsce publish --no-dependencies",
     "copy-assets": "shx mkdir -p dist/asset && shx cp -r src/asset/* dist/asset/",
-    "lint": "eslint --fix"
+    "lint": "oxlint --fix",
+    "format": "oxfmt"
   },
   "devDependencies": {
-    "@types/node": "22.20.2",
-    "@types/vscode": "^1.125.0",
-    "eslint-config-universal-code": "1.1.2",
-    "gitlys": "2.2.1",
-    "npm-run-all": "^4.1.5",
+    "@stacklys/oxlint-config": "1.0.4",
+    "@stacklys/tsconfig": "1.0.2",
+    "@types/node": "26.6.6",
+    "@types/vscode": "^1.144.0",
+    "gitlys": "2.2.4",
     "shx": "0.4.0",
-    "tsup": "8.5.1",
+    "tsdown": "0.23.4",
     "typescript": "^6.0.3"
   }
 }
