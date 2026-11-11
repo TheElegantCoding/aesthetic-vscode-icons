@@ -1,8 +1,8 @@
 type FileIconType = {
   name: string;
-  fileName?: string[];
-  fileExtension?: string[];
-  theme?: 'dark' | 'light';
+  fileNames?: string[];
+  fileExtensions?: string[];
+  themes?: 'dark' | 'light';
 };
 
 export type { FileIconType };
