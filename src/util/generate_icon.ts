@@ -1,9 +1,10 @@
-import fs from 'node:fs';
-import path from 'node:path';
+import { changeSvgColor } from './change_svg_color';
 
 import { iconTheme } from '../const/icon_theme';
 import { fileIcon } from '../module/file_icon';
-import { changeSvgColor } from './change_svg_color';
+
+import fs from 'node:fs';
+import path from 'node:path';
 
 import type { ThemeType } from '../type/theme_type';
 
@@ -36,7 +37,9 @@ const changeIconTheme = (extensionPath: string, theme: ThemeType) => {
   const iconPath = path.join(extensionPath, 'dist/asset/icon');
 
   fileIcon
-    .filter((icon) => { return icon.themes; })
+    .filter((icon) => {
+      return icon.themes;
+    })
     .forEach((icon) => {
       changeSvgColor(iconPath, icon.name, theme);
     });
