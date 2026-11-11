@@ -13,18 +13,18 @@ const generateIcon = (extensionPath?: string, theme?: ThemeType) => {
   fileIcon.forEach((icon) => {
     const definitionId = `file_${icon.name}`;
 
-    const hasThemeSuffix = icon.theme && theme;
+    const hasThemeSuffix = icon.themes && theme;
     const iconFileName = hasThemeSuffix && theme === 'light' ? `${icon.name}_light.svg` : `${icon.name}.svg`;
 
     iconTheme.iconDefinitions[definitionId] = {
       iconPath: `./asset/icon/${iconFileName}`
     };
 
-    icon.fileExtension?.forEach((extension) => {
+    icon.fileExtensions?.forEach((extension) => {
       iconTheme.fileExtensions[extension] = definitionId;
     });
 
-    icon.fileName?.forEach((fileName) => {
+    icon.fileNames?.forEach((fileName) => {
       iconTheme.fileNames[fileName] = definitionId;
     });
   });
@@ -36,7 +36,7 @@ const changeIconTheme = (extensionPath: string, theme: ThemeType) => {
   const iconPath = path.join(extensionPath, 'dist/asset/icon');
 
   fileIcon
-    .filter((icon) => { return icon.theme; })
+    .filter((icon) => { return icon.themes; })
     .forEach((icon) => {
       changeSvgColor(iconPath, icon.name, theme);
     });
