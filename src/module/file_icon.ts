@@ -1177,6 +1177,405 @@ const fileIcon: FileIconType[] = [
     name: 'vuex-store',
     fileExtensions: ['store.js', 'store.ts'],
     fileNames: ['store.js', 'store.ts', 'vuex.js', 'vuex.ts', 'pinia.js', 'pinia.ts']
+  },
+  {
+    name: 'aws',
+    fileExtensions: [],
+    fileNames: [
+      'buildspec.yml',
+      'buildspec.yaml',
+      'appspec.yml',
+      'appspec.yaml',
+      'aws-exports.js',
+      'aws-exports.ts',
+      'samconfig.toml',
+      'samconfig.yaml',
+      'samconfig.yml',
+      'cdk.json',
+      'cdk.context.json',
+      'Dockerrun.aws.json',
+      '.ebignore'
+    ]
+  },
+  {
+    name: 'azure',
+    fileExtensions: ['azcli']
+  },
+  {
+    name: 'bash',
+    fileExtensions: [
+      'sh',
+      'ksh',
+      'csh',
+      'tcsh',
+      'zsh',
+      'bash',
+      'bat',
+      'cmd',
+      'awk',
+      'fish',
+      'exp',
+      'nu',
+      'xsh',
+      'bash_aliases',
+      'bash_login',
+      'bash_logout',
+      'bash_profile',
+      'bashrc',
+      'cshrc',
+      'ebuild',
+      'eclass',
+      'profile',
+      'tcshrc',
+      'xprofile',
+      'xsession',
+      'xsessionrc',
+      'yash_profile',
+      'yashrc',
+      'zlogin',
+      'zlogout',
+      'zprofile',
+      'zsh-theme',
+      'zshenv',
+      'zshrc'
+    ],
+    fileNames: [
+      'commit-msg',
+      'pre-commit',
+      'pre-push',
+      'post-merge',
+      '.envrc',
+      '.hushlogin',
+      'APKBUILD',
+      'PKGBUILD',
+      'bashrc_Apple_Terminal',
+      'zlogin',
+      'zlogout',
+      'zprofile',
+      'zshenv',
+      'zshrc',
+      'zshrc_Apple_Terminal'
+    ]
+  },
+  {
+    name: 'bazel',
+    fileExtensions: ['bzl', 'bazel'],
+    fileNames: ['.bazelignore', '.bazelrc', '.bazelversion']
+  },
+  {
+    name: 'bicep',
+    fileExtensions: ['bicep']
+  },
+  {
+    name: 'browserlist',
+    fileNames: ['browserslist', '.browserslistrc']
+  },
+  {
+    name: 'bun',
+    fileNames: ['bunfig.toml', '.bun-version']
+  },
+  {
+    name: 'csharp',
+    fileExtensions: ['cs', 'csx', 'csharp']
+  },
+  {
+    name: 'c',
+    fileExtensions: ['c', 'i', 'mi']
+  },
+  {
+    name: 'clangd',
+    fileNames: ['.clangd']
+  },
+  {
+    name: 'cmake',
+    fileExtensions: ['cmake'],
+    fileNames: ['cmakelists.txt', 'cmakecache.txt', 'CMakePresets.json']
+  },
+  {
+    name: 'cpp',
+    fileExtensions: [
+      'cc',
+      'cpp',
+      'cxx',
+      'c++',
+      'cp',
+      'mii',
+      'ii',
+      'cppm',
+      'c++m',
+      'ccm',
+      'cxxm',
+      'h.in',
+      'hpp.in',
+      'ipp',
+      'ixx',
+      'tpp',
+      'txx'
+    ]
+  },
+  {
+    name: 'dart',
+    fileExtensions: ['dart'],
+    fileNames: ['.pubignore']
+  },
+  {
+    name: 'dart-generated',
+    fileExtensions: ['freezed.dart', 'g.dart']
+  },
+  {
+    name: 'gcloud',
+    fileExtensions: [],
+    fileNames: [
+      'app.yaml',
+      'app.yml',
+      'cloudbuild.yaml',
+      'cloudbuild.yml',
+      'cloudbuild.json',
+      '.gcloudignore',
+      'firestore.indexes.json',
+      'storage.rules',
+      'database.rules.json',
+      'skaffold.yaml',
+      'clouddeploy.yaml'
+    ]
+  },
+  {
+    name: 'godot',
+    fileExtensions: ['gd']
+  },
+  {
+    name: 'grunt',
+    fileNames: [
+      'gruntfile.js',
+      'gruntfile.ts',
+      'gruntfile.cjs',
+      'gruntfile.cts',
+      'gruntfile.coffee',
+      'gruntfile.babel.js',
+      'gruntfile.babel.ts',
+      'gruntfile.babel.coffee'
+    ]
+  },
+  {
+    name: 'heroku',
+    fileNames: ['procfile', 'procfile.windows']
+  },
+  {
+    name: 'jenkins',
+    fileNames: ['jenkinsfile'],
+    fileExtensions: ['jenkinsfile', 'jenkins']
+  },
+  {
+    name: 'julia',
+    fileExtensions: ['jl']
+  },
+  {
+    name: 'laravel',
+    fileExtensions: ['blade.php', 'inky.php'],
+    fileNames: ['artisan']
+  },
+  {
+    name: 'makefile',
+    fileExtensions: ['mk'],
+    fileNames: ['makefile', 'gnumakefile', 'kbuild']
+  },
+  {
+    name: 'markdown',
+    fileExtensions: [
+      'md',
+      'markdown',
+      'rst',
+      'copilotmd',
+      'litcoffee',
+      'markdn',
+      'mdown',
+      'mdtext',
+      'mdtxt',
+      'mdwn',
+      'mkd',
+      'mkdn',
+      'ronn',
+      'workbook'
+    ]
+  },
+  {
+    name: 'matlab',
+    fileExtensions: ['mat', 'mlx', 'mlapp', 'mexa64', 'mexw64', 'mexmaca64', 'slx', 'slxp']
+  },
+  {
+    name: 'mdx',
+    fileExtensions: ['mdx']
+  },
+  {
+    name: 'neovim',
+    fileNames: ['init.lua', 'init.vim', '.nvimrc', '.nvim.lua', 'lazy-lock.json']
+  },
+  {
+    name: 'oxc',
+    fileNames: [
+      '.oxlintrc.json',
+      '.oxlintrc.jsonc',
+      '.oxfmtrc.json',
+      '.oxfmtrc.jsonc',
+      'oxlint.config.ts',
+      'oxfmt.config.ts'
+    ]
+  },
+  {
+    name: 'playwright',
+    fileNames: [
+      'playwright.config.js',
+      'playwright.config.cjs',
+      'playwright.config.mjs',
+      'playwright.config.ts',
+      'playwright.config.cts',
+      'playwright.config.mts',
+      'playwright.config.base.js',
+      'playwright.config.base.cjs',
+      'playwright.config.base.mjs',
+      'playwright.config.base.ts',
+      'playwright.config.base.cts',
+      'playwright.config.base.mts',
+      'playwright-ct.config.js',
+      'playwright-ct.config.cjs',
+      'playwright-ct.config.mjs',
+      'playwright-ct.config.ts',
+      'playwright-ct.config.cts',
+      'playwright-ct.config.mts'
+    ]
+  },
+  {
+    name: 'prettier',
+    fileExtensions: [],
+    fileNames: [
+      'prettier.config.js',
+      'prettier.config.mjs',
+      'prettier.config.cjs',
+      'prettier.config.ts',
+      'prettier.config.mts',
+      'prettier.config.cts',
+      '.prettierrc',
+      '.prettierrc.js',
+      '.prettierrc.mjs',
+      '.prettierrc.cjs',
+      '.prettierrc.ts',
+      '.prettierrc.mts',
+      '.prettierrc.cts',
+      '.prettierrc.json',
+      '.prettierrc.json5',
+      '.prettierrc.yaml',
+      '.prettierrc.yml',
+      '.prettierrc.toml',
+      '.prettierignore'
+    ]
+  },
+  {
+    name: 'pug',
+    fileExtensions: ['jade', 'pug'],
+    fileNames: ['.pug-lintrc', '.pug-lintrc.js', '.pug-lintrc.json']
+  },
+  {
+    name: 'python',
+    fileExtensions: ['py', 'cpy', 'gyp', 'gypi', 'ipy', 'pyi', 'pyt', 'pyw', 'rpy']
+  },
+  // {
+  //   name: 'qwik',
+  //   fileExtensions: ['tsx']
+  // },
+  // {
+  //   name: 'solid',
+  //   fileExtensions: ['tsx']
+  // },
+  {
+    name: 'redis',
+    fileExtensions: ['rdb', 'aof'],
+    fileNames: ['redis.conf', 'redis-stack.conf', 'redis.windows.conf', 'sentinel.conf', 'dump.rdb', 'appendonly.aof']
+  },
+  {
+    name: 'rollup',
+    fileNames: [
+      'rollup.config.js',
+      'rollup.config.mjs',
+      'rollup.config.ts',
+      'rollup-config.js',
+      'rollup-config.mjs',
+      'rollup-config.ts',
+      'rollup.config.common.js',
+      'rollup.config.common.mjs',
+      'rollup.config.common.ts',
+      'rollup.config.base.js',
+      'rollup.config.base.mjs',
+      'rollup.config.base.ts',
+      'rollup.config.prod.js',
+      'rollup.config.prod.mjs',
+      'rollup.config.prod.ts',
+      'rollup.config.dev.js',
+      'rollup.config.dev.mjs',
+      'rollup.config.dev.ts',
+      'rollup.config.prod.vendor.js',
+      'rollup.config.prod.vendor.mjs',
+      'rollup.config.prod.vendor.ts'
+    ]
+  },
+  {
+    name: 'uml',
+    fileExtensions: ['iuml', 'pu', 'puml', 'plantuml', 'wsd']
+  },
+  {
+    name: 'vanilla-extract',
+    fileExtensions: ['css.ts', 'css.js', 'css.cjs', 'css.mjs', 'css.tsx', 'css.jsx']
+  },
+  {
+    name: 'visual-studio',
+    fileExtensions: [
+      'csproj',
+      'ruleset',
+      'sln',
+      'slnf',
+      'slnx',
+      'suo',
+      'vb',
+      'vbs',
+      'vcxitems',
+      'vcxitems.filters',
+      'vcxproj',
+      'vcxproj.filters',
+      'wixproj',
+      'bas',
+      'vba'
+    ],
+    fileNames: ['.vsconfig']
+  },
+  {
+    name: 'webassembly',
+    fileExtensions: ['wat', 'wasm']
+  },
+  {
+    name: 'webpack',
+    fileNames: [
+      'webpack.config.js',
+      'webpack.config.mjs',
+      'webpack.config.cjs',
+      'webpack.config.ts',
+      'webpack.config.mts',
+      'webpack.config.cts',
+      'webpack.common.js',
+      'webpack.common.ts',
+      'webpack.dev.js',
+      'webpack.dev.ts',
+      'webpack.prod.js',
+      'webpack.prod.ts',
+      'webpack.base.js',
+      'webpack.base.ts',
+      'webpack.server.js',
+      'webpack.server.ts',
+      'webpack.client.js',
+      'webpack.client.ts'
+    ]
+  },
+  {
+    name: 'wrangler',
+    fileNames: ['wrangler.toml', 'wrangler.json', 'wrangler.jsonc']
   }
 ];
 
