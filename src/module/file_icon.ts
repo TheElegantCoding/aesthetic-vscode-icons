@@ -396,7 +396,7 @@ const fileIcon: FileIconType[] = [
     ]
   },
   {
-    name: 'jsconfig',
+    name: 'js-config',
     fileExtensions: [],
     fileNames: ['jsconfig.json']
   },
@@ -421,6 +421,10 @@ const fileIcon: FileIconType[] = [
     name: 'bicep-config',
     fileExtensions: [],
     fileNames: ['bicepconfig.json']
+  },
+  {
+    name: 'gitlab',
+    fileExtensions: ['gitlab-ci.yml']
   }
 ];
 
