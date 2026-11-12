@@ -785,6 +785,205 @@ const fileIcon: FileIconType[] = [
     name: 'lua',
     fileExtensions: ['lua'],
     fileNames: ['.luacheckrc']
+  },
+  {
+    name: 'angular',
+    fileNames: ['angular-cli.json', '.angular-cli.json', 'angular.json', 'ng-package.json']
+  },
+  {
+    name: 'babel',
+    fileExtensions: [],
+    fileNames: [
+      'babel.config.js',
+      'babel.config.mjs',
+      'babel.config.cjs',
+      'babel.config.cts',
+      'babel.config.ts',
+      'babel.config.json',
+      '.babelrc',
+      '.babelrc.js',
+      '.babelrc.mjs',
+      '.babelrc.cjs',
+      '.babelrc.cts',
+      '.babelrc.json'
+    ]
+  },
+  {
+    name: 'ejs',
+    fileExtensions: ['ejs']
+  },
+  {
+    name: 'fortran',
+    fileExtensions: ['f', 'f77', 'f90', 'f95', 'f03', 'f08']
+  },
+  {
+    name: 'gamemaker',
+    fileExtensions: ['gml', 'yy', 'yyp', 'yyz']
+  },
+  {
+    name: 'gatsby',
+    fileNames: [
+      'gatsby-config.js',
+      'gatsby-config.mjs',
+      'gatsby-config.ts',
+      'gatsby-node.js',
+      'gatsby-node.mjs',
+      'gatsby-node.ts',
+      'gatsby-browser.js',
+      'gatsby-browser.tsx',
+      'gatsby-ssr.js',
+      'gatsby-ssr.tsx'
+    ]
+  },
+  {
+    name: 'gitpod',
+    fileNames: ['.gitpod.yml']
+  },
+  {
+    name: 'go',
+    fileExtensions: ['go']
+  },
+  {
+    name: 'go-mod',
+    fileNames: ['go.mod', 'go.work', 'go.work.sum']
+  },
+  {
+    name: 'go-sum',
+    fileNames: ['go.sum']
+  },
+  {
+    name: 'handlebars',
+    fileExtensions: ['hbs', 'mustache', 'handlebars', 'hjs']
+  },
+  {
+    name: 'haskell',
+    fileExtensions: ['hs', 'lhs']
+  },
+  {
+    name: 'jest',
+    fileNames: [
+      'jest.config.js',
+      'jest.config.cjs',
+      'jest.config.mjs',
+      'jest.config.ts',
+      'jest.config.cts',
+      'jest.config.mts',
+      'jest.config.json',
+      'jest.e2e.config.js',
+      'jest.e2e.config.cjs',
+      'jest.e2e.config.mjs',
+      'jest.e2e.config.ts',
+      'jest.e2e.config.cts',
+      'jest.e2e.config.mts',
+      'jest.e2e.config.json',
+      'jest.e2e.json',
+      'jest-unit.config.js',
+      'jest-e2e.config.js',
+      'jest-e2e.config.cjs',
+      'jest-e2e.config.mjs',
+      'jest-e2e.config.ts',
+      'jest-e2e.config.cts',
+      'jest-e2e.config.mts',
+      'jest-e2e.config.json',
+      'jest-e2e.json',
+      'jest-github-actions-reporter.js',
+      'jest.setup.js',
+      'jest.setup.ts',
+      'jest.json',
+      '.jestrc',
+      '.jestrc.js',
+      '.jestrc.json',
+      'jest.teardown.js',
+      'jest-preset.json',
+      'jest-preset.js',
+      'jest-preset.cjs',
+      'jest-preset.mjs',
+      'jest.preset.js',
+      'jest.preset.mjs',
+      'jest.preset.cjs',
+      'jest.preset.json'
+    ]
+  },
+  {
+    name: 'netlify',
+    themes: 'light',
+    fileNames: ['netlify.json', 'netlify.yml', 'netlify.yaml', 'netlify.toml']
+  },
+  {
+    name: 'nx',
+    fileNames: ['nx.json', '.nxignore']
+  },
+  {
+    name: 'powershell',
+    fileExtensions: ['ps1', 'psm1', 'psd1', 'ps1xml', 'psc1', 'pssc', 'psrc']
+  },
+  {
+    name: 'pytorch',
+    fileExtensions: ['pt', 'pth', 'pwf']
+  },
+  {
+    name: 'quasar',
+    fileNames: ['quasar.conf.js', 'quasar.config.js', 'quasar.conf.ts', 'quasar.config.ts', 'quasar.config.cjs']
+  },
+  {
+    name: 'rome',
+    fileNames: ['rome.json']
+  },
+  {
+    name: 'sentry',
+    fileExtensions: [],
+    fileNames: [
+      '.sentryclirc',
+      'sentry.properties',
+      'sentry.config.js',
+      'sentry.config.ts',
+      'sentry.client.config.js',
+      'sentry.client.config.ts',
+      'sentry.server.config.js',
+      'sentry.server.config.ts',
+      'sentry.edge.config.js',
+      'sentry.edge.config.ts'
+    ]
+  },
+  {
+    name: 'stylus',
+    fileExtensions: ['styl']
+  },
+  {
+    name: 'swift',
+    fileExtensions: ['swift', 'xcplayground', 'swiftdeps', 'swiftdoc', 'swiftmodule', 'swiftsourceinfo'],
+    fileNames: ['.swift-format', '.swift-version', '.swiftformat', '.xcode-version']
+  },
+  {
+    name: 'symfony',
+    fileExtensions: [],
+    fileNames: [
+      'symfony.lock',
+      '.symfony.local.yaml',
+      '.symfony.local.yml',
+      '.symfony.cloud.yaml',
+      '.symfony.cloud.yml'
+    ]
+  },
+  {
+    name: 'terraform',
+    fileExtensions: ['tf', 'tf.json', 'tfvars', 'tfstate', 'tfbackend', 'terraformignore']
+  },
+  {
+    name: 'terraform-vars',
+    fileExtensions: ['tfvars']
+  },
+  {
+    name: 'unity',
+    fileExtensions: ['unity', 'unitypackage']
+  },
+  {
+    name: 'vim',
+    fileExtensions: ['vimrc', 'gvimrc', 'exrc', 'vim', 'viminfo']
+  },
+  {
+    name: 'zig',
+    fileExtensions: ['zig', 'zon']
   }
 ];
 
