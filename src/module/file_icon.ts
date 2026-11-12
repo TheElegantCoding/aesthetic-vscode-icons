@@ -1,4 +1,4 @@
-/* eslint-disable max-lines */
+// oxlint-disable max-lines
 import type { FileIconType } from '../type/file_icon_types';
 
 const fileIcon: FileIconType[] = [
@@ -984,6 +984,199 @@ const fileIcon: FileIconType[] = [
   {
     name: 'zig',
     fileExtensions: ['zig', 'zon']
+  },
+  {
+    name: 'arduino',
+    fileExtensions: ['ino']
+  },
+  {
+    name: 'clojure',
+    fileExtensions: ['clj', 'cljs', 'cljc', 'cljx', 'clojure', 'edn']
+  },
+  {
+    name: 'elm',
+    fileExtensions: ['elm']
+  },
+  {
+    name: 'excalidraw',
+    fileNames: ['excalidraw', 'excalidraw.json', 'excalidraw.svg', 'excalidraw.png'],
+    fileExtensions: ['excalidraw', 'excalidraw.json', 'excalidraw.svg', 'excalidraw.png']
+  },
+  {
+    name: 'gulp',
+    fileNames: [
+      'gulpfile.js',
+      'gulpfile.mjs',
+      'gulpfile.ts',
+      'gulpfile.cts',
+      'gulpfile.mts',
+      'gulpfile.babel.js',
+      'gulpfile.cjs'
+    ]
+  },
+  {
+    name: 'gemini',
+    fileExtensions: ['gmi', 'gemini']
+  },
+  {
+    name: 'ionic',
+    fileNames: ['ionic.config.json', '.io-config.json']
+  },
+  {
+    name: 'java',
+    fileExtensions: ['java', 'jsp', 'jav']
+  },
+  {
+    name: 'kotlin',
+    fileExtensions: ['kt', 'kts']
+  },
+  {
+    name: 'kubernetes',
+    fileNames: ['k8s.yml', 'k8s.yaml', 'kubernetes.yml', 'kubernetes.yaml', '.k8s.yml', '.k8s.yaml']
+  },
+  {
+    name: 'lighthouse',
+    fileNames: [
+      '.lighthouserc.js',
+      'lighthouserc.js',
+      '.lighthouserc.cjs',
+      'lighthouserc.cjs',
+      '.lighthouserc.json',
+      'lighthouserc.json',
+      '.lighthouserc.yml',
+      'lighthouserc.yml',
+      '.lighthouserc.yaml',
+      'lighthouserc.yaml'
+    ]
+  },
+  {
+    name: 'mint',
+    fileExtensions: ['mint']
+  },
+  {
+    name: 'nest',
+    fileNames: ['nest-cli.json', '.nest-cli.json', 'nestconfig.json', '.nestconfig.json']
+  },
+  {
+    name: 'ruby',
+    fileExtensions: ['rb', 'erb', 'rbs', 'gemspec', 'podspec', 'rake', 'rbi', 'rbx', 'rjs', 'ru'],
+    fileNames: [
+      '.ruby-version',
+      'appraisals',
+      'berksfile',
+      'berksfile.lock',
+      'brewfile',
+      'capfile',
+      'cheffile',
+      'dangerfile',
+      'deliverfile',
+      'guardfile',
+      'gymfile',
+      'hobofile',
+      'matchfile',
+      'podfile',
+      'puppetfile',
+      'rakefile',
+      'rantfile',
+      'scanfile',
+      'snapfile',
+      'thorfile'
+    ]
+  },
+  {
+    name: 'scala',
+    fileExtensions: ['scala', 'sc']
+  },
+  {
+    name: 'sqlite',
+    fileExtensions: [
+      'sqlite',
+      'sqlite3',
+      'sqlitedb',
+      'db3',
+      's3db',
+      'sl3',
+      'sqlite-wal',
+      'sqlite-shm',
+      'sqlite-journal',
+      'db-wal',
+      'db-shm',
+      'db-journal'
+    ],
+    fileNames: []
+  },
+  {
+    name: 'stackblitz',
+    fileNames: ['.stackblitzrc']
+  },
+  {
+    name: 'storybook',
+    fileExtensions: [
+      'stories.js',
+      'stories.jsx',
+      'stories.mdx',
+      'story.js',
+      'story.jsx',
+      'stories.ts',
+      'stories.tsx',
+      'story.ts',
+      'story.tsx',
+      'stories.svelte',
+      'story.mdx',
+      'stories.vue'
+    ]
+  },
+  {
+    name: 'sublime-text',
+    fileExtensions: ['sublime-project', 'sublime-workspace']
+  },
+  {
+    name: 'supabase',
+    fileNames: ['supabase.js', 'supabase.ts', 'supabase.py']
+  },
+  {
+    name: 'svelte',
+    fileExtensions: ['svelte', 'svelte.js', 'svelte.ts']
+  },
+  {
+    name: 'swc',
+    fileExtensions: ['swcrc']
+  },
+  {
+    name: 'tauri',
+    fileNames: [
+      'tauri.conf.json',
+      'tauri.config.json',
+      'tauri.linux.conf.json',
+      'tauri.windows.conf.json',
+      'tauri.macos.conf.json',
+      '.taurignore'
+    ],
+    fileExtensions: ['tauri']
+  },
+  {
+    name: 'toml',
+    fileExtensions: ['toml', 'tosd'],
+    themes: 'light'
+  },
+  {
+    name: 'turbo',
+    themes: 'light',
+    fileNames: ['turbo.json', 'turbo.jsonc']
+  },
+  {
+    name: 'vlang',
+    fileExtensions: ['v'],
+    fileNames: ['vpkg.json', 'v.mod']
+  },
+  {
+    name: 'vue',
+    fileExtensions: ['vue']
+  },
+  {
+    name: 'vuex-store',
+    fileExtensions: ['store.js', 'store.ts'],
+    fileNames: ['store.js', 'store.ts', 'vuex.js', 'vuex.ts', 'pinia.js', 'pinia.ts']
   }
 ];
 
