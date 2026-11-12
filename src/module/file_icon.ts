@@ -325,6 +325,41 @@ const fileIcon: FileIconType[] = [
   {
     name: 'yarn',
     fileNames: ['.yarnrc', '.yarnclean', '.yarn-integrity', 'yarn-error.log', '.yarnrc.yml', '.yarnrc.yaml']
+  },
+  {
+    name: 'ts-config',
+    fileNames: [
+      'tsconfig.json',
+      'tsconfig.app.json',
+      'tsconfig.editor.json',
+      'tsconfig.spec.json',
+      'tsconfig.base.json',
+      'tsconfig.build.json',
+      'tsconfig.eslint.json',
+      'tsconfig.lib.json',
+      'tsconfig.lib.prod.json',
+      'tsconfig.node.json',
+      'tsconfig.test.json',
+      'tsconfig.e2e.json',
+      'tsconfig.web.json',
+      'tsconfig.webworker.json',
+      'tsconfig.worker.json',
+      'tsconfig.config.json',
+      'tsconfig.vitest.json',
+      'tsconfig.cjs.json',
+      'tsconfig.esm.json',
+      'tsconfig.mjs.json',
+      'tsconfig.doc.json',
+      'tsconfig.paths.json',
+      'tsconfig.main.json',
+      'tsconfig.renderer.json',
+      'tsconfig.server.json',
+      'tsconfig.client.json',
+      'tsconfig.declaration.json',
+      'tsconfig.dev.json',
+      'tsconfig.prod.json'
+    ],
+    fileExtensions: ['tsconfig.json']
   }
 ];
 
