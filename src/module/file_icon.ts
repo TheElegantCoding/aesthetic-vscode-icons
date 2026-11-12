@@ -425,6 +425,89 @@ const fileIcon: FileIconType[] = [
   {
     name: 'gitlab',
     fileExtensions: ['gitlab-ci.yml']
+  },
+  {
+    name: 'css-map',
+    fileExtensions: ['css.map']
+  },
+  {
+    name: 'css',
+    fileExtensions: ['css']
+  },
+  {
+    name: 'esbuild',
+    fileExtensions: [],
+    fileNames: [
+      'esbuild.config.js',
+      'esbuild.config.mjs',
+      'esbuild.config.cjs',
+      'esbuild.config.ts',
+      'esbuild.config.mts',
+      'esbuild.config.cts',
+      'esbuild.js',
+      'esbuild.mjs',
+      'esbuild.cjs',
+      'esbuild.ts'
+    ]
+  },
+  {
+    name: 'firebase',
+    fileNames: ['firebase.config.js', 'firebase.json', '.firebaserc', 'firestore.rules', 'firestore.indexes.json']
+  },
+  {
+    name: 'gradle',
+    fileExtensions: ['gradle'],
+    fileNames: ['gradle.properties', 'gradlew', 'gradle-wrapper.properties', 'gradlew.bat']
+  },
+  {
+    name: 'javascript-map',
+    fileExtensions: ['js.map', 'mjs.map', 'cjs.map']
+  },
+  {
+    name: 'javascript',
+    fileExtensions: ['esx', 'mjs', 'js', 'cjs', 'es6', 'pac'],
+    fileNames: ['jakefile']
+  },
+  {
+    name: 'json',
+    fileExtensions: [
+      'json',
+      'jsonc',
+      'tsbuildinfo',
+      'json5',
+      'jsonl',
+      'ndjson',
+      'geojson',
+      'har',
+      'jsonld',
+      'webmanifest',
+      'ts.map'
+    ],
+    fileNames: ['.jscsrc', '.jshintrc', '.jsbeautifyrc', '.esformatter', 'cdp.pid', '.whitesource']
+  },
+  {
+    name: 'jupyter',
+    fileExtensions: ['ipynb']
+  },
+  {
+    name: 'less',
+    fileExtensions: ['less']
+  },
+  {
+    name: 'php',
+    fileExtensions: ['php', 'php4', 'php5', 'phtml', 'ctp']
+  },
+  {
+    name: 'stencil',
+    fileNames: ['stencil.config.js', 'stencil.config.ts']
+  },
+  {
+    name: 'typescript-def',
+    fileExtensions: ['d.ts', 'd.cts', 'd.mts', 'd.ets']
+  },
+  {
+    name: 'typescript',
+    fileExtensions: ['ts', 'cts', 'mts']
   }
 ];
 
