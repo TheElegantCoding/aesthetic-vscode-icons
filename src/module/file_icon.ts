@@ -508,6 +508,76 @@ const fileIcon: FileIconType[] = [
   {
     name: 'typescript',
     fileExtensions: ['ts', 'cts', 'mts']
+  },
+  {
+    name: 'apollo',
+    fileNames: ['apollo.config.js']
+  },
+  {
+    name: 'assembly',
+    fileExtensions: ['asm', 'a51', 'inc', 'nasm', 's', 'ms', 'agc', 'ags', 'aea', 'argus', 'mitigus', 'binsource']
+  },
+  {
+    name: 'biome',
+    fileNames: ['biome.json', 'biome.jsonc', '.biome.json', '.biome.jsonc']
+  },
+  {
+    name: 'blazor',
+    fileExtensions: ['razor', 'razor.cs', 'razor.css', 'razor.js'],
+    fileNames: ['_Imports.razor', '_Host.cshtml']
+  },
+  {
+    name: 'craco',
+    fileExtensions: [],
+    fileNames: [
+      'craco.config.js',
+      'craco.config.cjs',
+      'craco.config.ts',
+      '.cracorc',
+      '.cracorc.js',
+      '.cracorc.json',
+      '.cracorc.yaml',
+      '.cracorc.yml'
+    ]
+  },
+  {
+    name: 'django',
+    fileExtensions: ['djt']
+  },
+  {
+    name: 'elixir',
+    fileExtensions: ['ex', 'exs', 'eex', 'leex', 'heex']
+  },
+  {
+    name: 'nginx',
+    fileNames: ['nginx.conf'],
+    fileExtensions: ['nginx', 'nginxconf', 'nginxconfig']
+  },
+  {
+    name: 'nuget',
+    fileNames: ['nuget.config', '.nuspec', 'nuget.exe'],
+    fileExtensions: ['nupkg', 'nuspec']
+  },
+  {
+    name: 'nuxt',
+    fileNames: ['nuxt.config.js', 'nuxt.config.ts', '.nuxtignore', '.nuxtrc']
+  },
+  {
+    name: 'ocaml',
+    fileExtensions: ['ml', 'mli', 'cmx']
+  },
+  {
+    name: 'perl',
+    fileExtensions: ['pm', 'raku', 'pod', 'psgi', 't']
+  },
+  {
+    name: 'qml',
+    fileExtensions: ['qml', 'qmltypes', 'qmlproject'],
+    fileNames: ['qmldir']
+  },
+  {
+    name: 'sass',
+    fileExtensions: ['scss', 'sass']
   }
 ];
 
