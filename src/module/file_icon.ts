@@ -360,6 +360,67 @@ const fileIcon: FileIconType[] = [
       'tsconfig.prod.json'
     ],
     fileExtensions: ['tsconfig.json']
+  },
+  {
+    name: 'astro-config',
+    fileNames: [
+      'astro.config.js',
+      'astro.config.mjs',
+      'astro.config.cjs',
+      'astro.config.ts',
+      'astro.config.mts',
+      'astro.config.cts'
+    ]
+  },
+  {
+    name: 'vue-config',
+    fileNames: ['vue.config.js', 'vue.config.mjs', 'vue.config.cjs', 'vue.config.ts']
+  },
+  {
+    name: 'python-misc',
+    fileExtensions: [],
+    fileNames: [
+      'pyproject.toml',
+      'setup.py',
+      'setup.cfg',
+      'requirements.txt',
+      'requirements-dev.txt',
+      'Pipfile',
+      'poetry.lock',
+      'uv.lock',
+      'tox.ini',
+      'pytest.ini',
+      'conftest.py',
+      'MANIFEST.in',
+      '.python-version'
+    ]
+  },
+  {
+    name: 'jsconfig',
+    fileExtensions: [],
+    fileNames: ['jsconfig.json']
+  },
+  {
+    name: 'svelte-config',
+    fileExtensions: [],
+    fileNames: ['svelte.config.js', 'svelte.config.mjs', 'svelte.config.cjs', 'svelte.config.ts']
+  },
+  {
+    name: 'markdoc-config',
+    fileExtensions: [],
+    fileNames: [
+      'markdoc.config.js',
+      'markdoc.config.mjs',
+      'markdoc.config.cjs',
+      'markdoc.config.ts',
+      'markdoc.config.mts',
+      'markdoc.config.cts'
+    ]
+  },
+  {
+    name: 'bicep-config',
+    fileExtensions: [],
+    fileNames: ['bicepconfig.json']
   }
 ];
 
