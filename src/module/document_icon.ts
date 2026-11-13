@@ -15,7 +15,37 @@ const documentIcon = [
   },
   {
     name: 'certificate',
-    fileExtensions: ['cer', 'cert', 'crt']
+    fileExtensions: ['cer', 'cert', 'crt', 'license'],
+    fileNames: [
+      'copying',
+      'copying.md',
+      'copying.rst',
+      'copying.txt',
+      'copyright',
+      'copyright.md',
+      'copyright.rst',
+      'copyright.txt',
+      'license',
+      'license-agpl',
+      'license-apache',
+      'license-bsd',
+      'license-mit',
+      'license-gpl',
+      'license-lgpl',
+      'license.md',
+      'license.rst',
+      'license.txt',
+      'licence',
+      'licence-agpl',
+      'licence-apache',
+      'licence-bsd',
+      'licence-mit',
+      'licence-gpl',
+      'licence-lgpl',
+      'licence.md',
+      'licence.rst',
+      'licence.txt'
+    ]
   },
   {
     name: 'changelog',
