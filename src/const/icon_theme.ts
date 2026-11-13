@@ -1,5 +1,7 @@
 import type { IconDefinition } from '../type/icon_definition';
 
+const ICON_THEME_ID = 'aesthetic-icons';
+
 const iconTheme: {
   file: string;
   folder: string;
@@ -26,4 +28,4 @@ const iconTheme: {
   fileNames: {}
 };
 
-export { iconTheme };
+export { iconTheme, ICON_THEME_ID };
