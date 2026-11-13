@@ -1247,7 +1247,6 @@ const fileIcon: FileIconType[] = [
       '.envrc',
       '.hushlogin',
       'APKBUILD',
-      'PKGBUILD',
       'bashrc_Apple_Terminal',
       'zlogin',
       'zlogout',
