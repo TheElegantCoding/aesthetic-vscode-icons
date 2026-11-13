@@ -1,44 +1,20 @@
 {
-  "publisher": "LuisMonsalve",
   "name": "aesthetic-vscode-icons",
   "displayName": "Aesthetic icons",
-  "description": "Aesthetic icon theme for Vscode",
   "version": "0.0.0",
-  "keywords": [
-    "icons",
-    "theme",
-    "icon-theme",
-    "customization",
-    "aesthetic"
+  "description": "Aesthetic icon theme for Vscode",
+  "categories": [
+    "Themes"
   ],
-  "extensionKind": ["ui", "workspace"],
-  "categories": ["Themes"],
+  "keywords": [
+    "aesthetic",
+    "customization",
+    "icon-theme",
+    "icons",
+    "theme"
+  ],
+  "publisher": "LuisMonsalve",
   "main": "./dist/extension.mjs",
-  "engines": {
-    "vscode": "^1.125.0",
-    "node": ">=22.17.0",
-    "bun": ">=1.1.0"
-  },
-  "activationEvents": ["onStartupFinished"],
-  "contributes": {
-    "iconThemes": [{
-      "id": "aesthetic-icons",
-      "label": "Aesthetic icons",
-      "path": "./dist/file_icons.json"
-    }],
-    "configuration": {
-      "title": "Aesthetic icons",
-      "properties": {
-        "aesthetic-icons.theme": {
-          "type": "string",
-          "default": "dark",
-          "enum": ["dark", "light"],
-          "description": "Select the Aesthetic icon theme",
-          "enumDescriptions": ["Dark theme", "Light theme"]
-        }
-      }
-    }
-  },
   "scripts": {
     "setup": "bunx gitlys init",
     "playground": "bun ./src/module/playground.ts",
@@ -46,7 +22,7 @@
     "watch": "bunx tsdown --watch",
     "package": "vsce package --no-dependencies",
     "publish": "vsce publish --no-dependencies",
-    "copy-assets": "shx mkdir -p dist/asset && shx cp -r src/asset/* dist/asset/",
+    "copy-assets": "mkdir -p dist/asset && cp -r src/asset/. dist/asset/",
     "lint": "oxlint --fix",
     "format": "oxfmt"
   },
@@ -56,9 +32,47 @@
     "@types/node": "26.6.6",
     "@types/vscode": "^1.144.0",
     "gitlys": "2.2.4",
-    "shx": "0.4.0",
     "tsdown": "0.23.4",
     "typescript": "^6.0.3",
     "unrun": "0.3.1"
+  },
+  "contributes": {
+    "iconThemes": [
+      {
+        "id": "aesthetic-icons",
+        "label": "Aesthetic icons",
+        "path": "./dist/file_icons.json"
+      }
+    ],
+    "configuration": {
+      "title": "Aesthetic icons",
+      "properties": {
+        "aesthetic-icons.theme": {
+          "type": "string",
+          "default": "dark",
+          "enum": [
+            "dark",
+            "light"
+          ],
+          "description": "Select the Aesthetic icon theme",
+          "enumDescriptions": [
+            "Dark theme",
+            "Light theme"
+          ]
+        }
+      }
+    }
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "extensionKind": [
+    "ui",
+    "workspace"
+  ],
+  "engines": {
+    "bun": ">=1.1.0",
+    "node": ">=22.17.0",
+    "vscode": "^1.125.0"
   }
 }
