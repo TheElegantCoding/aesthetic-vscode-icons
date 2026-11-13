@@ -906,7 +906,7 @@ const fileIcon: FileIconType[] = [
   },
   {
     name: 'netlify',
-    themes: 'light',
+    light: true,
     fileNames: ['netlify.json', 'netlify.yml', 'netlify.yaml', 'netlify.toml']
   },
   {
@@ -1157,11 +1157,11 @@ const fileIcon: FileIconType[] = [
   {
     name: 'toml',
     fileExtensions: ['toml', 'tosd'],
-    themes: 'light'
+    light: true
   },
   {
     name: 'turbo',
-    themes: 'light',
+    light: true,
     fileNames: ['turbo.json', 'turbo.jsonc']
   },
   {
@@ -1576,6 +1576,85 @@ const fileIcon: FileIconType[] = [
   {
     name: 'wrangler',
     fileNames: ['wrangler.toml', 'wrangler.json', 'wrangler.jsonc']
+  },
+  {
+    name: 'astro',
+    light: true,
+    fileExtensions: ['astro']
+  },
+  {
+    name: 'circleci',
+    fileNames: ['circle.yml'],
+    light: true
+  },
+  {
+    name: 'copilot',
+    fileNames: ['copilot-instructions.md', '.copilotignore'],
+    light: true
+  },
+  {
+    name: 'cursor',
+    fileNames: ['.cursorignore', '.cursorindexingignore', '.cursorrules', '.cursor', '.cursor.json', '.cursorrc'],
+    light: true
+  },
+  {
+    name: 'deno',
+    fileNames: ['deno.json', 'deno.jsonc', 'deno.lock'],
+    light: true
+  },
+  {
+    name: 'expo',
+    fileNames: ['eas.json', '.easignore'],
+    light: true
+  },
+  {
+    name: 'jinja',
+    fileExtensions: ['jinja', 'jinja2', 'j2', 'jinja-html'],
+    light: true
+  },
+  {
+    name: 'next',
+    fileNames: ['next.config.js', 'next.config.mjs', 'next.config.ts', 'next.config.mts'],
+    light: true
+  },
+  {
+    name: 'prisma',
+    fileExtensions: ['prisma'],
+    light: true,
+    fileNames: [
+      'prisma.config.js',
+      'prisma.config.mjs',
+      'prisma.config.cjs',
+      'prisma.config.ts',
+      'prisma.config.mts',
+      'prisma.config.cts'
+    ]
+  },
+  {
+    name: 'remix',
+    fileNames: ['remix.config.js', 'remix.config.ts'],
+    light: true
+  },
+  {
+    name: 'stylelint',
+    light: true,
+    fileNames: [
+      'stylelint.config.js',
+      'stylelint.config.mjs',
+      'stylelint.config.cjs',
+      'stylelint.config.ts',
+      'stylelint.config.mts',
+      'stylelint.config.cts',
+      '.stylelintrc',
+      '.stylelintrc.js',
+      '.stylelintrc.mjs',
+      '.stylelintrc.cjs',
+      '.stylelintrc.json',
+      '.stylelintrc.yaml',
+      '.stylelintrc.yml',
+      '.stylelintignore',
+      '.stylelintcache'
+    ]
   }
 ];
 
