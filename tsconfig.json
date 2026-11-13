@@ -2,6 +2,7 @@
   "extends": "@stacklys/tsconfig/strict",
   "compilerOptions": {
     "paths": {
+      "@src/*": ["./src/*"],
       "@global/*": ["./src/global/*"],
       "@module/*": ["./src/module/*"],
       "@public/*": ["./public/*"],
