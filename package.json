@@ -17,8 +17,7 @@
   "main": "./dist/extension.mjs",
   "scripts": {
     "setup": "bunx gitlys init",
-    "playground": "bun ./src/module/playground.ts",
-    "build": "bunx tsdown && bun run copy-assets && bun run playground",
+    "build": "bunx tsdown && bun run copy-assets && bun run /src/generate_icons.ts",
     "watch": "bunx tsdown --watch",
     "package": "vsce package --no-dependencies",
     "publish": "vsce publish --no-dependencies",
