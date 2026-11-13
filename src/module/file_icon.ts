@@ -169,7 +169,7 @@ const fileIcon: FileIconType[] = [
   },
   {
     name: 'cargo-lock',
-    fileNames: ['Cargo.lock', 'cargo.lock']
+    fileNames: ['Cargo.lock']
   },
   {
     name: 'node-lock',
