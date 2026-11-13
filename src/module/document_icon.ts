@@ -1,3 +1,4 @@
+// oxlint-disable max-lines
 const documentIcon = [
   {
     name: 'authors',
@@ -241,6 +242,187 @@ const documentIcon = [
       'hfs',
       'squashfs',
       'apfs'
+    ]
+  },
+  {
+    name: 'database',
+    fileExtensions: [
+      'pdb',
+      'sql',
+      'pks',
+      'pkb',
+      'accdb',
+      'mdb',
+      'sqlite',
+      'sqlite3',
+      'pgsql',
+      'postgres',
+      'plpgsql',
+      'psql',
+      'db',
+      'db3',
+      'dblite',
+      'dblite3',
+      'debugsymbols',
+      'odb',
+      'accde',
+      'adp',
+      'bak',
+      'bdb',
+      'dbf',
+      'fdb',
+      'feather',
+      'gdb',
+      'ibd',
+      'mdf',
+      'mde',
+      'myd',
+      'myi',
+      'ndf',
+      'orc',
+      'parquet',
+      'sdf',
+      'ldf',
+      'frm',
+      'kdbx',
+      'dsql'
+    ]
+  },
+  {
+    name: 'email',
+    fileExtensions: ['edb', 'eml', 'emlx', 'ics', 'mbox', 'msg', 'oft', 'olm', 'ost', 'p7s', 'pst', 'rpmsg', 'tnef'],
+    fileNames: ['.mailmap']
+  },
+  {
+    name: 'github-action',
+    fileNames: ['action.yml', 'action.yaml']
+  },
+  {
+    name: 'hash',
+    fileExtensions: [
+      'md5',
+      'sha1',
+      'sha224',
+      'sha256',
+      'sha384',
+      'sha512',
+      'sha256sum',
+      'sha512sum',
+      'md5sum',
+      'checksum'
+    ],
+    fileNames: ['MD5SUMS', 'SHA1SUMS', 'SHA256SUMS', 'SHA512SUMS', 'CHECKSUMS', 'checksums.txt', 'checksum.txt']
+  },
+  {
+    name: 'http',
+    fileExtensions: ['http', 'rest', 'har'],
+    fileNames: ['.curlrc', '_curlrc', 'http-client.env.json', 'http-client.private.env.json']
+  },
+  {
+    name: 'i18n',
+    fileExtensions: ['pot', 'po', 'mo', 'lang', 'xlf']
+  },
+  {
+    name: 'key',
+    fileExtensions: ['pub', 'key', 'pem', 'asc', 'gpg', 'passwd', 'secret'],
+    fileNames: ['.htpasswd', '.secrets']
+  },
+  {
+    name: 'lock',
+    fileExtensions: ['lock'],
+    fileNames: ['security.md', 'security.txt', 'security']
+  },
+  {
+    name: 'log',
+    fileExtensions: ['log']
+  },
+  {
+    name: 'todo',
+    fileExtensions: ['todo'],
+    fileNames: ['todo.md', 'todos.md']
+  },
+  {
+    name: 'verified',
+    fileExtensions: ['sigstore.json']
+  },
+  {
+    name: 'virtual',
+    fileExtensions: ['vdi', 'vbox', 'vbox-prev']
+  },
+  {
+    name: 'font-woff',
+    fileExtensions: ['woff', 'woff2']
+  },
+  {
+    name: 'font-ttf',
+    fileExtensions: ['ttf', 'ttc']
+  },
+  {
+    name: 'font-otf',
+    fileExtensions: ['otf', 'otc']
+  },
+  {
+    name: 'font-eot',
+    fileExtensions: ['eot']
+  },
+  {
+    name: 'font',
+    fileExtensions: ['fnt', 'fon', 'dfont', 'pfb', 'pfm', 'pfa', 'afm', 'bdf', 'pcf', 'psf', 'sfd']
+  },
+  {
+    name: 'svg',
+    fileExtensions: ['svg']
+  },
+  {
+    name: 'image-avif',
+    fileExtensions: ['avif', 'avifs']
+  },
+  {
+    name: 'image-gif',
+    fileExtensions: ['gif']
+  },
+  {
+    name: 'image-jpg',
+    fileExtensions: ['jpg', 'jpeg', 'jpe', 'jfif']
+  },
+  {
+    name: 'image-png',
+    fileExtensions: ['png', 'apng']
+  },
+  {
+    name: 'image-webp',
+    fileExtensions: ['webp']
+  },
+  {
+    name: 'image',
+    fileExtensions: [
+      'bmp',
+      'dib',
+      'ico',
+      'cur',
+      'icns',
+      'tif',
+      'tiff',
+      'heic',
+      'heif',
+      'jxl',
+      'jp2',
+      'j2k',
+      'tga',
+      'dds',
+      'hdr',
+      'exr',
+      'pbm',
+      'pgm',
+      'ppm',
+      'pnm',
+      'xbm',
+      'xpm',
+      'raw',
+      'dng',
+      'cr2',
+      'nef',
+      'arw'
     ]
   }
 ];
