@@ -1,19 +1,26 @@
-/* eslint-disable ts/no-empty-function */
 import { workspace } from 'vscode';
 
-import { changeIconTheme } from './util/generate_icon';
+import { applyTheme } from '@src/util/apply_theme';
+
+import { join } from 'node:path';
 
 import type { ExtensionContext } from 'vscode';
 
-export const activate = (context: ExtensionContext) => {
-  context.subscriptions.push(workspace.onDidChangeConfiguration((event) => {
-    if (event.affectsConfiguration('aesthetic-icons.theme')) {
-      const config = workspace.getConfiguration('aesthetic-icons');
-      const selectedTheme = config.get('theme', 'dark');
+const activate = async (context: ExtensionContext) => {
+  const directory = join(context.extensionPath, 'dist');
 
-      changeIconTheme(context.extensionPath, selectedTheme);
-    }
-  }));
+  await applyTheme(directory);
+
+  context.subscriptions.push(
+    workspace.onDidChangeConfiguration(async (event) => {
+      if (event.affectsConfiguration('aesthetic-icons.theme')) {
+        await applyTheme(directory);
+      }
+    })
+  );
 };
 
-export const deactivate = () => {};
+// oxlint-disable-next-line no-empty-function
+const deactivate = () => {};
+
+export { activate, deactivate };
