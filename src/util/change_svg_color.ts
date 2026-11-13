@@ -1,40 +1,28 @@
-import fs from "node:fs";
-import path from "node:path";
+const COLOR_ATTRIBUTE = /\b(fill|stroke|stop-color)="[^"]*"/gi;
 
-import { color } from "../style/color";
+const escapeRegExp = (value: string): string => {
+  return value.replaceAll(/[.*+?^${}()|[\]\\]/g, String.raw`\$&`);
+};
 
-const changeSvgColor = (iconPath: string, baseFileName: string, theme: string) => {
-  const templatePath = path.join(iconPath, `${baseFileName}.svg`);
-  const fileName = theme === "dark" ? `${baseFileName}.svg` : `${baseFileName}_light.svg`;
-  const colorToUse = theme === "dark" ? color.light : color.dark;
-  let svgContent = fs.readFileSync(templatePath, "utf-8");
-  const hasDataTheme = /data-theme\s*=/i.test(svgContent);
+const recolor = (markup: string, color: string): string => {
+  return markup.replaceAll(COLOR_ATTRIBUTE, (_match, attribute: string) => {
+    return `${attribute}="${color}"`;
+  });
+};
 
-  svgContent = hasDataTheme
-    ? svgContent.replaceAll(
-        /<([a-z0-9]+)([^>]*data-change[^>]*)>/gi,
-        (_match, tagName, attributes: string) => {
-          let newAttributes = attributes;
+const changeSvgColor = (svg: string, color: string, classIdentifier?: string): string => {
+  if (!classIdentifier) {
+    return recolor(svg, color);
+  }
 
-          if (/fill\s*=/i.test(newAttributes)) {
-            newAttributes = newAttributes.replace(
-              /fill\s*=\s*(["'])(.*?)\1/i,
-              `fill="${colorToUse}"`,
-            );
-          }
+  const tagWithClass = new RegExp(
+    `<[a-z0-9]+\\b[^>]*\\bclass=["'][^"']*(?<![\\w-])${escapeRegExp(classIdentifier)}(?![\\w-])[^"']*["'][^>]*>`,
+    'gi'
+  );
 
-          if (!/fill\s*=/i.test(newAttributes)) {
-            newAttributes = `${newAttributes} fill="${colorToUse}"`;
-          }
-
-          return `<${tagName}${newAttributes}>`;
-        },
-      )
-    : svgContent.replaceAll(/fill="[^"]*"/g, `fill="${colorToUse}"`);
-
-  fs.writeFileSync(path.join(iconPath, fileName), svgContent, "utf-8");
-
-  return fileName;
+  return svg.replaceAll(tagWithClass, (tag) => {
+    return recolor(tag, color);
+  });
 };
 
 export { changeSvgColor };
