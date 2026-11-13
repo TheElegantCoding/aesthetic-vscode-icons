@@ -2,7 +2,7 @@ type FileIconType = {
   name: string;
   fileNames?: string[];
   fileExtensions?: string[];
-  themes?: 'dark' | 'light';
+  light?: boolean;
 };
 
 export type { FileIconType };
