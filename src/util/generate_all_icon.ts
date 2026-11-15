@@ -1,7 +1,10 @@
 import { iconTheme } from '@src/const/icon_theme';
 import { applicationsIcon } from '@src/module/applications_icon';
+import { configIcons } from '@src/module/config_icon';
 import { documentIcon } from '@src/module/document_icon';
-import { fileIcon } from '@src/module/file_icon';
+import { fileIcons } from '@src/module/file_icon';
+import { ignoreIcons } from '@src/module/ignore_icon';
+import { lockIcons } from '@src/module/lock_icon.ts';
 import { osIcon } from '@src/module/os_icon';
 
 import fs from 'node:fs';
@@ -10,7 +13,15 @@ import process from 'node:process';
 
 const generateAllIcon = (extensionPath?: string) => {
   const OUTPUT_FILE = path.join(extensionPath ?? process.cwd(), 'dist/file_icons.json');
-  const icons = [...fileIcon, ...applicationsIcon, ...documentIcon, ...osIcon];
+  const icons = [
+    ...fileIcons,
+    ...applicationsIcon,
+    ...documentIcon,
+    ...osIcon,
+    ...configIcons,
+    ...ignoreIcons,
+    ...lockIcons
+  ];
 
   icons.forEach((icon) => {
     const definitionId = `file_${icon.name}`;
