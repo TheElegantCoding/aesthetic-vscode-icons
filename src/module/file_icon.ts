@@ -1,7 +1,7 @@
 // oxlint-disable max-lines
 import type { FileIconType } from '../type/file_icon_types';
 
-const fileIcon: FileIconType[] = [
+const fileIcons: FileIconType[] = [
   {
     name: 'xml',
     fileExtensions: [
@@ -89,11 +89,7 @@ const fileIcon: FileIconType[] = [
   },
   {
     name: 'flutter',
-    fileNames: ['.flutter-plugins', '.fvmrc']
-  },
-  {
-    name: 'dart-lock',
-    fileNames: ['pubspec.lock']
+    fileNames: ['.flutter-plugins', '.fvmrc', '.metadata']
   },
   {
     name: 'editorconfig',
@@ -101,15 +97,11 @@ const fileIcon: FileIconType[] = [
   },
   {
     name: 'npm',
-    fileNames: ['.npmignore', '.npmrc']
+    fileNames: ['.npmrc']
   },
   {
     name: 'pnpm',
     fileNames: ['pnpm-workspace.yaml', '.pnpmfile.cjs']
-  },
-  {
-    name: 'pnpm-lock',
-    fileNames: ['pnpm-lock.yaml']
   },
   {
     name: 'tailwind',
@@ -164,40 +156,8 @@ const fileIcon: FileIconType[] = [
     ]
   },
   {
-    name: 'bun-lock',
-    fileNames: ['bun.lock']
-  },
-  {
-    name: 'cargo-lock',
-    fileNames: ['Cargo.lock']
-  },
-  {
-    name: 'node-lock',
-    fileNames: ['package-lock.json']
-  },
-  {
-    name: 'yarn-lock',
-    fileNames: ['yarn.lock']
-  },
-  {
-    name: 'terraform-lock',
-    fileNames: ['.terraform.lock.hcl']
-  },
-  {
-    name: 'lua-lock',
-    fileNames: ['lazy-lock.json']
-  },
-  {
     name: 'vscode',
-    fileExtensions: [
-      'vscodeignore',
-      'vsixmanifest',
-      'vsix',
-      'code-workplace',
-      'code-workspace',
-      'code-profile',
-      'code-snippets'
-    ]
+    fileExtensions: ['vsixmanifest', 'vsix', 'code-workplace', 'code-workspace', 'code-profile', 'code-snippets']
   },
   {
     name: 'amplify',
@@ -217,8 +177,7 @@ const fileIcon: FileIconType[] = [
       '.eslintrc.cjs',
       '.eslintrc.json',
       '.eslintrc.yaml',
-      '.eslintrc.yml',
-      '.eslintignore'
+      '.eslintrc.yml'
     ]
   },
   {
@@ -226,21 +185,15 @@ const fileIcon: FileIconType[] = [
     fileExtensions: ['patch'],
     fileNames: [
       '.git',
-      '.gitignore',
       '.gitmessage',
-      '.gitignore-global',
-      '.gitignore_global',
       '.gitattributes',
       '.gitattributes-global',
       '.gitattributes_global',
-      '.gitconfig',
       '.gitmodules',
       '.gitkeep',
       '.keep',
       '.gitpreserve',
       '.gitinclude',
-      '.git-blame-ignore',
-      '.git-blame-ignore-revs',
       '.git-for-windows-updater',
       'git-history',
       'COMMIT_EDITMSG',
@@ -250,7 +203,7 @@ const fileIcon: FileIconType[] = [
   },
   {
     name: 'html',
-    fileExtensions: ['htm', 'xhtml', 'html_vm', 'asp', 'html', 'aspx', 'jshtm', 'rhtml', 'shtml', 'volt', 'xht']
+    fileExtensions: ['htm', 'xhtml', 'html_vm', 'asp', 'html', 'aspxd', 'jshtm', 'rhtml', 'shtml', 'volt', 'xht']
   },
   {
     name: 'husky',
@@ -268,10 +221,6 @@ const fileIcon: FileIconType[] = [
   {
     name: 'mjml',
     fileExtensions: ['mjml']
-  },
-  {
-    name: 'mjml-config',
-    fileNames: ['.mjmlconfig']
   },
   {
     name: 'node-json',
@@ -327,103 +276,8 @@ const fileIcon: FileIconType[] = [
     fileNames: ['.yarnrc', '.yarnclean', '.yarn-integrity', 'yarn-error.log', '.yarnrc.yml', '.yarnrc.yaml']
   },
   {
-    name: 'ts-config',
-    fileNames: [
-      'tsconfig.json',
-      'tsconfig.app.json',
-      'tsconfig.editor.json',
-      'tsconfig.spec.json',
-      'tsconfig.base.json',
-      'tsconfig.build.json',
-      'tsconfig.eslint.json',
-      'tsconfig.lib.json',
-      'tsconfig.lib.prod.json',
-      'tsconfig.node.json',
-      'tsconfig.test.json',
-      'tsconfig.e2e.json',
-      'tsconfig.web.json',
-      'tsconfig.webworker.json',
-      'tsconfig.worker.json',
-      'tsconfig.config.json',
-      'tsconfig.vitest.json',
-      'tsconfig.cjs.json',
-      'tsconfig.esm.json',
-      'tsconfig.mjs.json',
-      'tsconfig.doc.json',
-      'tsconfig.paths.json',
-      'tsconfig.main.json',
-      'tsconfig.renderer.json',
-      'tsconfig.server.json',
-      'tsconfig.client.json',
-      'tsconfig.declaration.json',
-      'tsconfig.dev.json',
-      'tsconfig.prod.json'
-    ],
-    fileExtensions: ['tsconfig.json']
-  },
-  {
-    name: 'astro-config',
-    fileNames: [
-      'astro.config.js',
-      'astro.config.mjs',
-      'astro.config.cjs',
-      'astro.config.ts',
-      'astro.config.mts',
-      'astro.config.cts'
-    ]
-  },
-  {
-    name: 'vue-config',
-    fileNames: ['vue.config.js', 'vue.config.mjs', 'vue.config.cjs', 'vue.config.ts']
-  },
-  {
-    name: 'python-misc',
-    fileExtensions: [],
-    fileNames: [
-      'pyproject.toml',
-      'setup.py',
-      'setup.cfg',
-      'requirements.txt',
-      'requirements-dev.txt',
-      'Pipfile',
-      'poetry.lock',
-      'uv.lock',
-      'tox.ini',
-      'pytest.ini',
-      'conftest.py',
-      'MANIFEST.in',
-      '.python-version'
-    ]
-  },
-  {
-    name: 'js-config',
-    fileExtensions: [],
-    fileNames: ['jsconfig.json']
-  },
-  {
-    name: 'svelte-config',
-    fileExtensions: [],
-    fileNames: ['svelte.config.js', 'svelte.config.mjs', 'svelte.config.cjs', 'svelte.config.ts']
-  },
-  {
-    name: 'markdoc-config',
-    fileExtensions: [],
-    fileNames: [
-      'markdoc.config.js',
-      'markdoc.config.mjs',
-      'markdoc.config.cjs',
-      'markdoc.config.ts',
-      'markdoc.config.mts',
-      'markdoc.config.cts'
-    ]
-  },
-  {
-    name: 'bicep-config',
-    fileExtensions: [],
-    fileNames: ['bicepconfig.json']
-  },
-  {
     name: 'gitlab',
+    fileNames: ['.gitlab-ci.yml'],
     fileExtensions: ['gitlab-ci.yml']
   },
   {
@@ -495,7 +349,8 @@ const fileIcon: FileIconType[] = [
   },
   {
     name: 'php',
-    fileExtensions: ['php', 'php4', 'php5', 'phtml', 'ctp']
+    fileExtensions: ['php', 'php4', 'php5', 'phtml', 'ctp'],
+    fileNames: ['.php-cs-fixer.php', '.phpunit.xml', '.phpunit.xml.dist']
   },
   {
     name: 'stencil',
@@ -560,7 +415,7 @@ const fileIcon: FileIconType[] = [
   },
   {
     name: 'nuxt',
-    fileNames: ['nuxt.config.js', 'nuxt.config.ts', '.nuxtignore', '.nuxtrc']
+    fileNames: ['nuxt.config.js', 'nuxt.config.ts', '.nuxtrc']
   },
   {
     name: 'ocaml',
@@ -568,7 +423,7 @@ const fileIcon: FileIconType[] = [
   },
   {
     name: 'perl',
-    fileExtensions: ['pm', 'raku', 'pod', 'psgi', 't']
+    fileExtensions: ['pm', 'raku', 'pod', 'psgi', 't', 'pl']
   },
   {
     name: 'qml',
@@ -609,11 +464,9 @@ const fileIcon: FileIconType[] = [
   {
     name: 'docker',
     fileExtensions: [
-      'dockerignore',
       'dockerfile',
       'docker-compose.yml',
       'docker-compose.yaml',
-      'containerignore',
       'containerfile',
       'compose.yaml',
       'compose.yml'
@@ -771,7 +624,7 @@ const fileIcon: FileIconType[] = [
   },
   {
     name: 'latex',
-    fileExtensions: ['tex', 'ltx', 'cls', 'clo', 'latex', 'aux', 'tikz', 'synctex', 'synctex.gz']
+    fileExtensions: ['tex', 'ltx', 'cls', 'clo', 'latex', 'aux', 'tikz', 'synctex', 'synctex.gz', 'bib']
   },
   {
     name: 'react',
@@ -848,10 +701,6 @@ const fileIcon: FileIconType[] = [
     fileNames: ['go.mod', 'go.work', 'go.work.sum']
   },
   {
-    name: 'go-sum',
-    fileNames: ['go.sum']
-  },
-  {
     name: 'handlebars',
     fileExtensions: ['hbs', 'mustache', 'handlebars', 'hjs']
   },
@@ -911,7 +760,7 @@ const fileIcon: FileIconType[] = [
   },
   {
     name: 'nx',
-    fileNames: ['nx.json', '.nxignore']
+    fileNames: ['nx.json']
   },
   {
     name: 'powershell',
@@ -952,7 +801,7 @@ const fileIcon: FileIconType[] = [
   {
     name: 'swift',
     fileExtensions: ['swift', 'xcplayground', 'swiftdeps', 'swiftdoc', 'swiftmodule', 'swiftsourceinfo'],
-    fileNames: ['.swift-format', '.swift-version', '.swiftformat', '.xcode-version']
+    fileNames: ['.swift-format', '.swift-version', '.swiftformat', '.xcode-version', '.swiftlint.yml']
   },
   {
     name: 'symfony',
@@ -967,7 +816,7 @@ const fileIcon: FileIconType[] = [
   },
   {
     name: 'terraform',
-    fileExtensions: ['tf', 'tf.json', 'tfvars', 'tfstate', 'tfbackend', 'terraformignore']
+    fileExtensions: ['tf', 'tf.json', 'tfvars', 'tfstate', 'tfbackend']
   },
   {
     name: 'terraform-vars',
@@ -1016,6 +865,7 @@ const fileIcon: FileIconType[] = [
   },
   {
     name: 'gemini',
+    fileNames: ['gemini.md'],
     fileExtensions: ['gmi', 'gemini']
   },
   {
@@ -1024,7 +874,7 @@ const fileIcon: FileIconType[] = [
   },
   {
     name: 'java',
-    fileExtensions: ['java', 'jsp', 'jav']
+    fileExtensions: ['java', 'jsp', 'jav', 'class', 'jar', 'war']
   },
   {
     name: 'kotlin',
@@ -1062,6 +912,7 @@ const fileIcon: FileIconType[] = [
     fileExtensions: ['rb', 'erb', 'rbs', 'gemspec', 'podspec', 'rake', 'rbi', 'rbx', 'rjs', 'ru'],
     fileNames: [
       '.ruby-version',
+      'Gemfile',
       'appraisals',
       'berksfile',
       'berksfile.lock',
@@ -1149,8 +1000,7 @@ const fileIcon: FileIconType[] = [
       'tauri.config.json',
       'tauri.linux.conf.json',
       'tauri.windows.conf.json',
-      'tauri.macos.conf.json',
-      '.taurignore'
+      'tauri.macos.conf.json'
     ],
     fileExtensions: ['tauri']
   },
@@ -1180,7 +1030,6 @@ const fileIcon: FileIconType[] = [
   },
   {
     name: 'aws',
-    fileExtensions: [],
     fileNames: [
       'buildspec.yml',
       'buildspec.yaml',
@@ -1193,12 +1042,12 @@ const fileIcon: FileIconType[] = [
       'samconfig.yml',
       'cdk.json',
       'cdk.context.json',
-      'Dockerrun.aws.json',
-      '.ebignore'
+      'Dockerrun.aws.json'
     ]
   },
   {
     name: 'azure',
+    fileNames: ['azure-pipelines.yml'],
     fileExtensions: ['azcli']
   },
   {
@@ -1259,7 +1108,7 @@ const fileIcon: FileIconType[] = [
   {
     name: 'bazel',
     fileExtensions: ['bzl', 'bazel'],
-    fileNames: ['.bazelignore', '.bazelrc', '.bazelversion']
+    fileNames: ['.bazelrc', '.bazelversion']
   },
   {
     name: 'bicep',
@@ -1283,7 +1132,7 @@ const fileIcon: FileIconType[] = [
   },
   {
     name: 'clangd',
-    fileNames: ['.clangd']
+    fileNames: ['.clangd', '.clang-format', '.clang-tidy']
   },
   {
     name: 'cmake',
@@ -1315,7 +1164,7 @@ const fileIcon: FileIconType[] = [
   {
     name: 'dart',
     fileExtensions: ['dart'],
-    fileNames: ['.pubignore']
+    fileNames: ['pubspec.yaml']
   },
   {
     name: 'dart-generated',
@@ -1330,7 +1179,6 @@ const fileIcon: FileIconType[] = [
       'cloudbuild.yaml',
       'cloudbuild.yml',
       'cloudbuild.json',
-      '.gcloudignore',
       'firestore.indexes.json',
       'storage.rules',
       'database.rules.json',
@@ -1376,7 +1224,7 @@ const fileIcon: FileIconType[] = [
   {
     name: 'makefile',
     fileExtensions: ['mk'],
-    fileNames: ['makefile', 'gnumakefile', 'kbuild']
+    fileNames: ['makefile', 'gnumakefile', 'kbuild', 'justfile']
   },
   {
     name: 'markdown',
@@ -1445,7 +1293,6 @@ const fileIcon: FileIconType[] = [
   },
   {
     name: 'prettier',
-    fileExtensions: [],
     fileNames: [
       'prettier.config.js',
       'prettier.config.mjs',
@@ -1464,8 +1311,7 @@ const fileIcon: FileIconType[] = [
       '.prettierrc.json5',
       '.prettierrc.yaml',
       '.prettierrc.yml',
-      '.prettierrc.toml',
-      '.prettierignore'
+      '.prettierrc.toml'
     ]
   },
   {
@@ -1475,7 +1321,7 @@ const fileIcon: FileIconType[] = [
   },
   {
     name: 'python',
-    fileExtensions: ['py', 'cpy', 'gyp', 'gypi', 'ipy', 'pyi', 'pyt', 'pyw', 'rpy']
+    fileExtensions: ['py', 'cpy', 'gyp', 'gypi', 'ipy', 'pyi', 'pyt', 'pyw', 'rpy', 'pyx', 'pxd']
   },
   // {
   //   name: 'qwik',
@@ -1588,22 +1434,22 @@ const fileIcon: FileIconType[] = [
   },
   {
     name: 'copilot',
-    fileNames: ['copilot-instructions.md', '.copilotignore'],
+    fileNames: ['copilot-instructions.md'],
     light: true
   },
   {
     name: 'cursor',
-    fileNames: ['.cursorignore', '.cursorindexingignore', '.cursorrules', '.cursor', '.cursor.json', '.cursorrc'],
+    fileNames: ['.cursorrules', '.cursor', '.cursor.json', '.cursorrc'],
     light: true
   },
   {
     name: 'deno',
-    fileNames: ['deno.json', 'deno.jsonc', 'deno.lock'],
+    fileNames: ['deno.json', 'deno.jsonc'],
     light: true
   },
   {
     name: 'expo',
-    fileNames: ['eas.json', '.easignore'],
+    fileNames: ['eas.json'],
     light: true
   },
   {
@@ -1651,10 +1497,78 @@ const fileIcon: FileIconType[] = [
       '.stylelintrc.json',
       '.stylelintrc.yaml',
       '.stylelintrc.yml',
-      '.stylelintignore',
       '.stylelintcache'
     ]
+  },
+  {
+    name: 'maven',
+    fileExtensions: ['pom'],
+    fileNames: [
+      'pom.xml',
+      'effective-pom.xml',
+      'dependency-reduced-pom.xml',
+      'mvnw',
+      'mvnw.cmd',
+      'maven.config',
+      'jvm.config',
+      'extensions.xml',
+      'toolchains.xml'
+    ]
+  },
+  {
+    name: 'ansible',
+    fileNames: [
+      'ansible.cfg',
+      '.ansible-lint',
+      'ansible-navigator.yml',
+      'ansible-navigator.yaml',
+      '.ansible-navigator.yml',
+      '.ansible-navigator.yaml',
+      'execution-environment.yml',
+      'execution-environment.yaml',
+      'galaxy.yml',
+      'galaxy.yaml',
+      'playbook.yml',
+      'playbook.yaml',
+      'site.yml',
+      'site.yaml',
+      'requirements.yml',
+      'requirements.yaml'
+    ]
+  },
+  {
+    name: 'binary',
+    fileExtensions: [
+      'bin',
+      'dat',
+      'dll',
+      'so',
+      'dylib',
+      'a',
+      'lib',
+      'o',
+      'elf',
+      'ko',
+      'sys',
+      'rom',
+      'dmp',
+      'uf2',
+      'axf',
+      'rlib',
+      'pak',
+      'img'
+    ]
+  },
+  {
+    name: 'coffeescript',
+    fileExtensions: ['coffee', 'litcoffee', 'coffee.md', 'iced', 'cjsx', 'cson'],
+    fileNames: ['Cakefile', '.coffeelintrc', 'coffeelint.json', '.coffeelint.json']
+  },
+  {
+    name: 'vercel',
+    fileNames: ['vercel.json', 'vercel.ts', 'now.json'],
+    light: true
   }
 ];
 
-export { fileIcon };
+export { fileIcons };
