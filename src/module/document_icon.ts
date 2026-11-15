@@ -594,6 +594,277 @@ const documentIcon = [
     name: 'vagrant',
     fileNames: ['vagrantfile'],
     fileExtensions: ['vagrantfile']
+  },
+  {
+    name: 'architecture',
+    fileNames: ['architecture.md']
+  },
+  {
+    name: 'settings',
+    fileExtensions: [
+      'ini',
+      'dlc',
+      'config',
+      'conf',
+      'properties',
+      'prop',
+      'settings',
+      'option',
+      'props',
+      'prefs',
+      'sln.dotsettings',
+      'sln.dotsettings.user',
+      'cfg',
+      'cnf',
+      'tool-versions',
+      'directory',
+      'mak',
+      'npmrc',
+      'repo'
+    ],
+    fileNames: [
+      '.jshintignore',
+      '.buildignore',
+      '.mrconfig',
+      '.yardopts',
+      'manifest.mf',
+      '.clang-format',
+      '.clang-format-ignore',
+      '.clang-tidy',
+      '.conf',
+      'compile_flags.txt'
+    ]
+  },
+  {
+    name: 'vector',
+    fileExtensions: [
+      'glsl',
+      'vert',
+      'tesc',
+      'tese',
+      'geom',
+      'frag',
+      'comp',
+      'rgen',
+      'rint',
+      'rahit',
+      'rchit',
+      'rmiss',
+      'rcall',
+      'vert.glsl',
+      'tesc.glsl',
+      'tese.glsl',
+      'geom.glsl',
+      'frag.glsl',
+      'comp.glsl',
+      'rgen.glsl',
+      'rint.glsl',
+      'rahit.glsl',
+      'rchit.glsl',
+      'rmiss.glsl',
+      'rcall.glsl',
+      'vertex.glsl',
+      'geometry.glsl',
+      'fragment.glsl',
+      'compute.glsl',
+      'ts.glsl',
+      'gs.glsl',
+      'vs.glsl',
+      'fs.glsl',
+      'shader',
+      'vertexshader',
+      'fragmentshader',
+      'geometryshader',
+      'computeshader',
+      'hlsl',
+      'pixel.hlsl',
+      'geometry.hlsl',
+      'compute.hlsl',
+      'tessellation.hlsl',
+      'px.hlsl',
+      'geom.hlsl',
+      'comp.hlsl',
+      'tess.hlsl',
+      'wgsl',
+      'spv',
+      'slang',
+      'cginc',
+      'compute',
+      'fx',
+      'fxh',
+      'hlsli',
+      'psh',
+      'vsh'
+    ]
+  },
+  {
+    name: 'theme',
+    fileNames: ['theme.index']
+  },
+  {
+    name: 'audio',
+    fileExtensions: [
+      'aac',
+      'flac',
+      'm4a',
+      'm4b',
+      'm4r',
+      'aif',
+      'aiff',
+      'aifc',
+      'wma',
+      'ac3',
+      'amr',
+      'ape',
+      'au',
+      'caf',
+      'dsf',
+      'mka',
+      'mp2',
+      'mpc',
+      'tta',
+      'weba',
+      'mid',
+      'midi',
+      'kar',
+      'sf2'
+    ]
+  },
+  {
+    name: 'audio-mp3',
+    fileExtensions: ['mp3']
+  },
+  {
+    name: 'audio-ogg',
+    fileExtensions: ['ogg', 'oga', 'ogx', 'opus', 'spx']
+  },
+  {
+    name: 'audio-wav',
+    fileExtensions: ['wav', 'wave', 'bwf']
+  },
+  {
+    name: 'audio-wv',
+    fileExtensions: ['wv', 'wvc']
+  },
+  {
+    name: 'env',
+    fileExtensions: ['env'],
+    fileNames: [
+      '.env.defaults',
+      '.env.example',
+      '.env.sample',
+      '.env.template',
+      '.env.schema',
+      '.env.local',
+      '.env.dev',
+      '.env.development',
+      '.env.alpha',
+      '.env.e2e',
+      '.env.qa',
+      '.env.dist',
+      '.env.preprod',
+      '.env.prod',
+      '.env.production',
+      '.env.prod.example',
+      '.env.production.example',
+      '.env.stg',
+      '.env.stage',
+      '.env.staging',
+      '.env.preview',
+      '.env.test',
+      '.env.testing',
+      '.env.dev.local',
+      '.env.development.local',
+      '.env.qa.local',
+      '.env.prod.local',
+      '.env.production.local',
+      '.env.stg.local',
+      '.env.staging.local',
+      '.env.test.local',
+      '.env.test.example',
+      '.env.uat',
+      '.vars',
+      '.dev.vars'
+    ]
+  },
+  {
+    name: 'lint-staged',
+    fileNames: [
+      '.lintstagedrc',
+      '.lintstagedrc.json',
+      '.lintstagedrc.yaml',
+      '.lintstagedrc.yml',
+      '.lintstagedrc.mjs',
+      '.lintstagedrc.cjs',
+      'lint-staged.config.ts',
+      'lint-staged.config.mjs',
+      'lint-staged.config.cjs',
+      'lint-staged.config.js',
+      '.lintstagedrc.js'
+    ]
+  },
+  {
+    name: 'pull-request',
+    fileNames: ['pull_request_template.md']
+  },
+  {
+    name: 'slim',
+    fileExtensions: ['slim']
+  },
+  {
+    name: 'tpl',
+    fileExtensions: ['tpl']
+  },
+  {
+    name: 'video',
+    fileExtensions: [
+      'mp4',
+      'm4v',
+      'mkv',
+      'mk3d',
+      'wmv',
+      'asf',
+      'flv',
+      'f4v',
+      'mpg',
+      'mpeg',
+      'mpe',
+      'm2v',
+      'mts',
+      'm2ts',
+      '3gp',
+      '3g2',
+      'vob',
+      'rm',
+      'rmvb',
+      'mxf',
+      'dv',
+      'y4m',
+      'h264',
+      'h265',
+      'hevc',
+      'ivf'
+    ]
+  },
+  {
+    name: 'video-avi',
+    fileExtensions: ['avi', 'divx']
+  },
+  {
+    name: 'video-mov',
+    fileExtensions: ['mov', 'qt']
+  },
+  {
+    name: 'video-ogg',
+    fileExtensions: ['ogv', 'ogm']
+  },
+  {
+    name: 'video-webm',
+    fileExtensions: ['webm']
+  },
+  {
+    name: 'cur',
+    fileExtensions: ['cur']
   }
 ];
 
