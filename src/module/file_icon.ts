@@ -1568,6 +1568,16 @@ const fileIcons: FileIconType[] = [
     name: 'vercel',
     fileNames: ['vercel.json', 'vercel.ts', 'now.json'],
     light: true
+  },
+  {
+    name: 'crystal',
+    fileExtensions: ['cr', 'ecr'],
+    light: true
+  },
+  {
+    name: 'render',
+    fileNames: ['render.yaml', 'render.yml'],
+    light: true
   }
 ];
 
