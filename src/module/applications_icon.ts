@@ -24,6 +24,22 @@ const applicationsIcon: FileIconType[] = [
   {
     name: 'pdf',
     fileExtensions: ['pdf']
+  },
+  {
+    name: 'powerpoint',
+    fileExtensions: ['ppt', 'pptx']
+  },
+  {
+    name: 'word',
+    fileExtensions: ['doc', 'docx']
+  },
+  {
+    name: 'excel',
+    fileExtensions: ['xls', 'xlsx']
+  },
+  {
+    name: 'after-effects',
+    fileExtensions: ['aep']
   }
 ];
 
