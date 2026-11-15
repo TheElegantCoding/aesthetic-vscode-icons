@@ -15,7 +15,7 @@ const documentIcon = [
   },
   {
     name: 'certificate',
-    fileExtensions: ['cer', 'cert', 'crt', 'license'],
+    fileExtensions: ['cer', 'cert', 'crt', 'license', 'pfx'],
     fileNames: [
       'copying',
       'copying.md',
@@ -454,6 +454,146 @@ const documentIcon = [
       'nef',
       'arw'
     ]
+  },
+  {
+    name: 'composer',
+    fileNames: ['composer.json']
+  },
+  {
+    name: 'cspell',
+    fileNames: ['cspell.json']
+  },
+  {
+    name: 'docusaurus',
+    fileNames: [
+      'docusaurus.config.js',
+      'docusaurus.config.mjs',
+      'docusaurus.config.cjs',
+      'docusaurus.config.ts',
+      'docusaurus.config.mts',
+      'docusaurus.config.cts'
+    ]
+  },
+  {
+    name: 'fly',
+    fileNames: ['fly.toml', 'fly.staging.toml', 'fly.production.toml', 'fly.prod.toml', 'fly.dev.toml']
+  },
+  {
+    name: 'fsharp',
+    fileExtensions: ['fs', 'fsx', 'fsi', 'fsproj', 'fsscript']
+  },
+  {
+    name: 'groovy',
+    fileExtensions: ['groovy', 'gvy']
+  },
+  {
+    name: 'haml',
+    fileExtensions: ['haml']
+  },
+  {
+    name: 'hyprland',
+    fileNames: ['hyprland.conf', 'hyprland.lua']
+  },
+  {
+    name: 'kitty',
+    fileNames: ['kitty.conf', 'kitty/config.conf']
+  },
+  {
+    name: 'knex',
+    fileNames: ['knexfile.js', 'knexfile.mjs', 'knexfile.cjs', 'knexfile.ts', 'knexfile.mts', 'knexfile.cts']
+  },
+  {
+    name: 'lerna',
+    fileNames: ['lerna.json']
+  },
+  {
+    name: 'liquid',
+    fileExtensions: ['liquid']
+  },
+  {
+    name: 'lisp',
+    fileExtensions: ['lisp', 'lsp', 'cl', 'fast']
+  },
+  {
+    name: 'markdownlint',
+    fileExtensions: [],
+    fileNames: [
+      '.markdownlint.json',
+      '.markdownlint.jsonc',
+      '.markdownlint.yaml',
+      '.markdownlint.yml',
+      '.markdownlint.cjs',
+      '.markdownlint.mjs',
+      '.markdownlintrc',
+      '.markdownlint-cli2.jsonc',
+      '.markdownlint-cli2.yaml',
+      '.markdownlint-cli2.cjs',
+      '.markdownlint-cli2.mjs',
+      '.mdlrc'
+    ]
+  },
+  {
+    name: 'mocha',
+    fileNames: [
+      'mocha.opts',
+      '.mocharc.yml',
+      '.mocharc.yaml',
+      '.mocharc.js',
+      '.mocharc.cjs',
+      '.mocharc.json',
+      '.mocharc.jsonc'
+    ]
+  },
+  {
+    name: 'nim',
+    fileExtensions: ['nim', 'nimble']
+  },
+  {
+    name: 'nunjucks',
+    fileExtensions: ['njk', 'nunjucks']
+  },
+  {
+    name: 'pascal',
+    fileExtensions: ['pas']
+  },
+  {
+    name: 'proto',
+    fileExtensions: ['proto']
+  },
+  {
+    name: 'r',
+    fileExtensions: ['r', 'rmd', 'rhistory', 'rprofile', 'rt'],
+    fileNames: ['.Rhistory']
+  },
+  {
+    name: 'railway',
+    fileNames: ['railway.json', 'railway.toml', 'railpack.json', 'nixpacks.toml']
+  },
+  {
+    name: 'solidity',
+    fileExtensions: ['sol']
+  },
+  {
+    name: 'starship',
+    fileNames: ['starship.toml']
+  },
+  {
+    name: 'svgo',
+    fileNames: ['svgo.config.js', 'svgo.config.mjs', 'svgo.config.cjs', '.svgo.yml', '.svgo.yaml']
+  },
+  {
+    name: 'swagger',
+    fileExtensions: ['swagger.json', 'swagger.yml', 'swagger.yaml'],
+    fileNames: ['swagger.json', 'swagger.yml', 'swagger.yaml']
+  },
+  {
+    name: 'twig',
+    fileExtensions: ['twig']
+  },
+  {
+    name: 'vagrant',
+    fileNames: ['vagrantfile'],
+    fileExtensions: ['vagrantfile']
   }
 ];
 
